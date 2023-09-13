@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="hero-description"
+      content=" C & A is a Brand Strategy 
+      &  Graphic Design Agency. We help businesses design their success story with custom 
+      branding solutions that help them stand out and create a lasting 
+      impact in their industry. ."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="home-page/COLORED-WREATH-fav-icon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="index.js" > </script>
+    <link href="style-index.css" rel="stylesheet" />
+
+   
+   <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+
+
+    <title>C & A Branding & Graphic Designs</title>
+  </head>
+  <body>      
+
+<section class="section-hero ">
+   <div class= "section-hero-background"><div class="hero-overlay">
+    <header class="header nav-open">
+      <img
+        class="header-logo"
+        alt="C & A Logo"
+        src="home-page/hero-section/main-logo.png"
+      />
+     
+      
+      <button class="btn-mobile-nav">
+        <img src="home-page/menu-outline.svg" class="icon-mobile-nav menu-outline" name="menu-outline">
+        <img src="home-page/close-outline.svg" class="icon-mobile-nav close-outline" name="close-outline">
+      </button>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="portfolio-2.html">Portfolio</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="templates.html">Templates</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a
+              class="main-nav-link nav-cta"
+              href="contact.html"
+              >Start with Us</a>
+          </li>
+        </ul>   
+
+      </nav>
+        <!-- Shopping Cart Icon -->
+        <div class="cart-icon" id="cart-icon">
+          <img src="home-page/shopping-cart-icon.png" alt="Shopping Cart">
+          <span class="cart-count" id="cart-count">0</span>
+        </div>
+            
+             <!-- Shopping Cart Overlay -->
+             <cart-notification class="cart-overlay" id="cart-overlay">
+              <!-- Content of the Shopping Cart goes here -->
+              <div class="cart-content">
+                  <!-- Your cart items will go here -->
+                  <h1>My Shopping Cart</h1>
+
+                  <div class="shopping-cart">
+                    <div class="product">
+                      <div>
+                        <img
+                          class="product-image"
+                          src="templates-page/main-img/floral-stationary.webp"
+                        />
+                      </div>
+                      <div class="product-details">
+                        <div class="product-title">
+                          Floral Small Business Stationery Bundle for Event & Wedding Planners
+                        </div>
+                      </div>
+                      <div class="product-price">9.99</div>
+                      <div class="product-quantity">
+                        <input type="number" value="2" min="1" />
+                      </div>
+                      <div class="product-removal">
+                        <button class="remove-product">Remove</button>
+                      </div>
+                      <div class="product-line-price">19.98</div>
+                    </div>
+              
+                    <div class="product">
+                      <div>
+                        <img
+                          class="product-image"
+                          src="templates-page/main-img/minimal-stationary.webp"
+                        />
+                      </div>
+                      <div class="product-details">
+                        <div class="product-title">
+                          Professional Minimal Business Starter Kit Stationery Bundle
+                        </div>
+                      </div>
+                      <div class="product-price">9.99</div>
+                      <div class="product-quantity">
+                        <input type="number" value="1" min="1" />
+                      </div>
+                      <div class="product-removal">
+                        <button class="remove-product">Remove</button>
+                      </div>
+                      <div class="product-line-price">9.99</div>
+                    </div>
+              
+                    <div class="totals">
+                      <div class="totals-item">
+                        <label>Subtotal</label>
+                        <div class="totals-value" id="cart-subtotal">29.97</div>
+                      </div>
+                      <div class="totals-item totals-item-total">
+                        <label>Grand Total</label>
+                        <div class="totals-value" id="cart-total">29.97</div>
+                      </div>
+                    </div>
+              
+                    <button class="checkout">Checkout</button>
+                  </div>
+              </div>
+              <button class="close-cart" id="close-cart">Close</button>
+          </cart-notification>
+      </div>
+      <button class="close-cart" id="close-cart">Close</button>
+  </div>
+                      <div class="hero-text-box">
+            <h1 class="heading-primary">
+              We Craft Signature Looks for Businesses
+            </h1>
+            <p class="hero-description">
+              Capture Your Unique Brand Voice, Stand Out From The Crowd,
+              Resonate with Your Audience while Driving Sales & Streaming Your
+              Business
+            </p>          
+            <a href="service-magical-branding.html" class="btn btn--full margin-right-sm"
+              >See Services</a>
+            
+</div>
+
+
+
+              </div>
+              </div>
+              </div>
+
+          
+      </section>
+
+    
+    <section class="section-offers" id="offers">
+      <div class="center-text">
+        <h2 class="heading-secondary-offer">
+          Ready to take your business to the next level?
+        </h2>
+      </div>
+
+      <div class="offer-container grid grid--3-cols">
+            <div class="offers">
+            <img class="offer-img"
+              src="home-page/hero-section/slideshow-1/slider-photo-3.webp"
+              alt="Brand identity design for a tattoo parlour "
+            />
+            <h4 class="offer-heading">Brand & Graphic Design</h4>
+            <p class="offer-text">
+              Craft your own unique & enchanting brand with our design services.
+            </p>
+            <div class="offer-buttons">
+              <button class="offer-button"><a href="contact.html"> See Services</a></button>
+              
+            </div>
+          </div>
+
+            <div class="offers">
+            <img class="offer-img"
+              src="home-page/ready-section/print-templates.webp"
+              alt="multiple printed documents tiled diagonally"
+            />
+            <h4 class="offer-heading">Printable Templates</h4>
+            <p class="offer-text">
+              Voila! Design documents in minutes with our pre-designed templates!
+            </p>
+            <div class="offer-buttons">
+              <button class="offer-button"><a href="templates.html">Shop Now</a></button>
+            </div>
+          </div>
+
+          <div class="offers">
+            <img class="offer-img"
+              src="home-page/ready-section/blo-img.webp"
+              alt="visit our blog page"
+            />
+            <h4 class="offer-heading">Blog </h4>
+            <p class="offer-text">
+              Be mystified with our secret tips, tricks, & insights.
+            </p>
+            <div class="offer-buttons">
+              <button class="offer-button"><a href="blog.html" class="offer-button">Learn More</a></button>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    
+      
+      <div class="agency-slideshow"><div class="agency-slideshow-overlay">
+      <h2 class="heading-agency">
+        We are a <div class="agency-color">Brand Strategy</div> 
+        & <div class="agency-color-2">Graphic Design</div> <div class ="agency-final">Agency</div>
+      </h2>
+      <p class="agency-text">
+        We Help Businesses Design Their Success Story with custom </p><p class="agency-text">branding
+        solutions that help them stand out and create a lasting </p><p class="agency-text">impact in their
+        industry.
+      </p>
+    </div>
+  </div>
+  <div class="agency-swiper-container">
+    <div class="agency-swiper-wrapper">
+      <div class="agency-swiper-slide">
+        <img class="agency-swiper-img"
+    src="home-page/agency-section/slideshow-2/slider-photo-1.webp"
+    alt="Brand identity design for an inclusive feminine hygiene subscription company "
+  />
+        </div>
+      <div class="agency-swiper-slide">
+        <img class="agency-swiper-img"
+        src="home-page/agency-section/slideshow-2/slider-photo-2.webp"
+        alt="Brand identity design for a tropical restaurant "
+      />
+        </div>
+      <div class="agency-swiper-slide">
+        <img class="agency-swiper-img"
+        src="home-page/agency-section/slideshow-2/slider-photo-3.webp"
+        alt="Brand identity design for a tattoo parlour "
+      />
+        </div>
+      <div class="agency-swiper-slide">
+        <img class="agency-swiper-img"
+        src="home-page/agency-section/slideshow-2/slider-photo-4.webp"
+        alt="illustration of a mother and daughter "
+      />
+        </div>
+      <div class="agency-swiper-slide">
+        <img class="agency-swiper-img"
+        src="home-page/agency-section/slideshow-2/slider-photo-5.webp"
+        alt="restaurant menu design "
+      />
+        </div>
+      </div>
+    </div>
+  </div></div>
+<section>
+    <div class="section-testimonials">
+      <div class="center-text">
+        <h2 class="heading-secondary">
+          See what our satisfied clients have to say
+        </h2>
+      </div>
+      <div class="offer-container grid grid--3-cols">
+        <div class="offers">
+            <img
+              src="home-page/hero-section/slideshow-1/slider-photo-1.webp"
+              class="offer-img"
+              alt="Brand identity design for an inclusive empowering menstral health brand"
+            />
+
+            <h4 class="offer-heading">Crimson Crowned & Covered</h4>
+            <p class="offer-text">
+              “ I LOVE IT! Excellent! And the Market Research is so helpful its
+              giving me so many ideas.”
+            </p>
+          </div>
+          <div class="offers">
+            <img
+              src="home-page/client-section/flower-invoice.webp"
+              class="offer-img"
+              alt="multiple printed documents tiled diagonally"
+            />
+            <h4 class="offer-heading">Etsy Customer</h4>
+            <p class="offer-text">
+              I am EXTREMELY pleased with the quality of my purchase. The design
+              is unique, tasteful & elegant, & the seller included everything I
+              needed!
+            </p>
+          </div>
+          <div class="offers">
+            <img
+              src="home-page/client-section/food-plug.webp"
+              class="offer-img"
+              alt="Brand identity design for a Tropical Food Restaurant"
+            />
+            <h4 class="offer-heading">The Food Plug</h4>
+            <p class="offer-text">
+              "Yes I love it! Everything is Perfect."
+            </p>
+          </div>
+        </div>
+      
+      <div class="center-text">
+        <h2 class="heading-secondary">
+          about their experience
+        </h2>
+      </div>  
+    </div></div>
+    </section>
+       <div class="section-cta cta-box" id:"cta">
+        <div class="cta-text-box cta-container">
+          <h2 class="heading-secondary">Get insider access with our monthly newsletter</h2>
+        </div>
+        <div class="cta-form subscription-form" id="subscribe-form" > 
+        <label for = "full-name">Full Name</label>
+        <input id="full-name" type="text" placeholder="John Smith" name="full-name" required>
+        <label for = "email">Email Address</label>
+      <input id="email" type="email" placeholder="me@example.com" name="email" required>
+        <button class="btn btn--form">Subscribe</button>
+      </div>
+    </div>
+         <footer class=" grid--footer grid--4--cols">
+          <div class="logos">
+          <a href="index.html" class="footer-logo">
+          <img class="logo" alt="ThisisCandA Logo" src="home-page/hero-section/main-logo.png"/></a>
+    
+          <div class="social-links">
+            <a href="https://www.instagram.com/thisiscanda/" class="social-icon footer-link" ><img class="instagram-logo" alt="Circular Istagram Logo" src="social-media/instagram.png"/></a> 
+            <a href="https://www.facebook.com/ThisIsCandA" class="social-icon footer-link" ><img class="facebook-logo" alt="Circular facebook Logo" src="social-media/facebook.png"/></a> 
+            <a href="https://www.pinterest.com/thisiscanda" class="social-icon footer-link" ><img class="pinterest-logo" alt="Circular pinterest Logo" src="social-media/pinterest.png"/></a> 
+            <a href="https://www.youtube.com/@ThisIsCandA" class="social-icon footer-link" ><img class="youtube-logo" alt="Circular youtube Logo" src="social-media/youtube.png"/></a>
+            </div>
+            </div>
+        <div class="cta-footer-text-btn">
+          <h2 class ="footer-heading">We Make it easy for you to create</h2>
+<h2 class ="footer-heading">a consistent brand itentity.</h2>
+<button class="footer-button"
+><a href="contact.html" >WORK WITH US</a></button>
+</div>
+        <div class="nav-col">
+          <p class="footer-heading">BROWSE</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="index.html">Home</a></li>
+            <li><a class="footer-link" href="about-us.html">About</a></li>
+            <li><a class="footer-link" href="contact.html">Services </a></li>
+            <li><a class="footer-link" href="portfolio-2.html">Portfolio</a></li>            
+            <li><a class="footer-link" href="templates.html">Templates</a></li>
+            <li><a class="footer-link" href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="nav-col">
+          <p class="footer-heading">SERVICES</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="service-magical-branding.html">Branding</a></li>
+            <li><a class="footer-link" href="service-whimsical-web-design.html">Web Design</a></li>
+            <li><a class="footer-link" href="service-mystical-graphics.html">Graphic Design </a></li>
+            <li><a class="footer-link" href="service-enchanted-marketing.html">Marketing</a></li>
+            <li><a class="footer-link" href="service-captivating-illustration.html">Illustrations</a></li>
+            <li><a class="footer-link" href="service-enlightened-consulting.html">Consulting</a></li>
+
+          </ul>
+        </div>
+    </footer><span class="copyright-text-container"><p>© This is C & A.</p>
+      <p>All rights reserved</p>
+    <p><a class="footer-link" href="terms-and-conditions.html">Terms and Conditions</a></p>
+  <p><a class="footer-link" href="privacy-policy.html">Privacy Policy</a></p></span>
+     </main>
+     <script src="shopping-cart.js"></script>
+     <script src="shopping-cart-overlay.js"></script>
+<script src="index.js" > </script>
+     </body>
+     
+</html>
