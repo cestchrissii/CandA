@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #342949;
+  overflow-x: hidden;
+  background-color: #e4e4e4;
+}
+
+h1 {
+  color: #342949;
+  font-weight: 700;
+  font-style: normal;
+}

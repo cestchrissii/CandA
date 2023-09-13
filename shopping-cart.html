@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style-shopping-cart.css" rel="stylesheet" />
+
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>My Shopping Cart</h1>
+      </header>
+
+      <div class="shopping-cart-grid">
+        <section class="products">
+          <div class="product">
+            <div class="product-img-holder">
+              <img
+                class="product-img"
+                src="templates-page/main-img/floral-stationary.webp"
+                alt="Product 1"
+              />
+            </div>
+
+            <div class="product-details">
+              <h2>Product 1</h2>
+              <!-- Modify your existing cart items section to include increment and decrement buttons -->
+              <ul id="cart-items">
+                <!-- Sample item (You can generate these dynamically based on your cart data) -->
+                <li data-id="1">
+                  $9.99
+                  <button class="remove-from-cart">Remove</button>
+                  <button class="decrement-quantity">-</button>
+                  <span class="item-quantity">1</span>
+                  <button class="increment-quantity">+</button>
+                </li>
+                <!-- Add more items here -->
+              </ul>
+            </div>
+            <!-- Add more product entries here -->
+          </div>
+        </section>
+
+        <!-- Add these elements to your existing HTML -->
+        <section class="promo-code">
+          <h2>Order Summary</h2>
+          <label for="promo-code">Enter Promo Code:</label>
+          <input
+            type="text"
+            id="promo-code"
+            placeholder="Enter your promo code"
+          />
+          <button id="apply-promo">Apply</button>
+
+          <div class="cart">
+            <ul id="cart-items">
+              <!-- Cart items will be dynamically added here -->
+            </ul>
+            <p>Total: <span id="cart-total">$0.00</span></p>
+
+            <div id="payment">
+              <h2>Payment</h2>
+              <div id="payment-methods">
+                <label for="credit-card">Credit Card:</label>
+                <input
+                  type="text"
+                  id="credit-card"
+                  placeholder="Enter your credit card information"
+                />
+
+                <label for="paypal">PayPal:</label>
+                <input type="checkbox" id="paypal" /> Pay with PayPal
+              </div>
+              <button id="checkout-button">Checkout</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script defer src="shopping-cart.js"></script>
+  </body>
+</html>

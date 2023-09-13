@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="hero-description"
+      content=" C & A is a Brand Strategy 
+      &  Graphic Design Agency. We help businesses design their success story with custom 
+      branding solutions that help them stand out and create a lasting 
+      impact in their industry. ."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="home-page/COLORED-WREATH-fav-icon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet" />
+    <link href="style-ecommerce-detail.css" rel="stylesheet" />
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <title>C & A Branding & Graphic Designs</title>
+  </head>
+  <body>      
+   
+    <section class="section-hero"> 
+    <header class="header nav-open">
+      <img
+        class="header-logo"
+        alt="C & A Logo"
+        src="home-page/hero-section/main logo.png"
+      /><button class="btn-mobile-nav">
+        <img src="home-page/menu-outline.svg" class="icon-mobile-nav menu-outline" name="menu-outline">
+        <img src="home-page/close-outline.svg" class="icon-mobile-nav close-outline" name="close-outline"></button>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="portfolio-2.html">Portfolio</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="templates.html">Templates</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a
+              class="main-nav-link nav-cta"
+              href="contact.html"
+              >Start with Us</a>
+          </li>
+        </ul>
+      </nav>
+             <!-- Shopping Cart Icon -->
+             <div class="cart-icon" id="cart-icon">
+              <img src="home-page/shopping-cart-icon.png" alt="Shopping Cart">
+              <span class="cart-count" id="cart-count">0</span>
+            </div>
+                
+                 <!-- Shopping Cart Overlay -->
+                 <cart-notification class="cart-overlay" id="cart-overlay">
+                  <!-- Content of the Shopping Cart goes here -->
+                  <div class="cart-content">
+                      <!-- Your cart items will go here -->
+                      <h1>My Shopping Cart</h1>
+
+                      <div class="shopping-cart">
+                        <div class="product">
+                          <div>
+                            <img
+                              class="product-image"
+                              src="templates-page/main-img/floral-stationary.webp"
+                            />
+                          </div>
+                          <div class="product-details">
+                            <div class="product-title">
+                              Floral Small Business Stationery Bundle for Event & Wedding Planners
+                            </div>
+                          </div>
+                          <div class="product-price">9.99</div>
+                          <div class="product-quantity">
+                            <input type="number" value="2" min="1" />
+                          </div>
+                          <div class="product-removal">
+                            <button class="remove-product">Remove</button>
+                          </div>
+                          <div class="product-line-price">19.98</div>
+                        </div>
+                  
+                        <div class="product">
+                          <div>
+                            <img
+                              class="product-image"
+                              src="templates-page/main-img/minimal-stationary.webp"
+                            />
+                          </div>
+                          <div class="product-details">
+                            <div class="product-title">
+                              Professional Minimal Business Starter Kit Stationery Bundle
+                            </div>
+                          </div>
+                          <div class="product-price">9.99</div>
+                          <div class="product-quantity">
+                            <input type="number" value="1" min="1" />
+                          </div>
+                          <div class="product-removal">
+                            <button class="remove-product">Remove</button>
+                          </div>
+                          <div class="product-line-price">9.99</div>
+                        </div>
+                  
+                        <div class="totals">
+                          <div class="totals-item">
+                            <label>Subtotal</label>
+                            <div class="totals-value" id="cart-subtotal">29.97</div>
+                          </div>
+                          <div class="totals-item totals-item-total">
+                            <label>Grand Total</label>
+                            <div class="totals-value" id="cart-total">29.97</div>
+                          </div>
+                        </div>
+                  
+                        <button class="checkout">Checkout</button>
+                      </div>
+                  </div>
+                  <button class="close-cart" id="close-cart">Close</button>
+              </cart-notification>
+                  </div>
+              </div>
+  </section>
+  <section class="ecommerce-detail-page">
+
+    <div class="back-button">
+      <a class="main-nav-link" href="javascript:history.back()" onclick="goBack()">Back</a>
+    </div> 
+     
+    
+    <div class="ecommerce-detail-grid grid grid-2-col">
+    <div class="product-slider">
+      <div class="product-carousel">
+        <div class="carousel-images">
+          <img src="bundle-imgs/floral/invoice/invoice-1.webp" alt="Floral invoice Template" class="active">
+          <img src="bundle-imgs/floral/bundle/invoice-2.webp" alt="Easy to Edit Stationary">
+          <img src="bundle-imgs/floral/invoice/invoice-3.webp" alt="Invoice Template for Wedding Planners">
+          <img src="bundle-imgs/floral/invoice/invoice-4.webp" alt="Whats Included">
+          <img src="bundle-imgs/floral/get-bundle.webp" alt="Complete Editable Stationary">
+          <!-- Add more product images here -->
+        </div>
+        <button class="prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next-btn" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+
+      <ul id="accordion">
+        <li>
+          <label for="first"
+            >01 What do you need?<span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="accordion-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                /></svg></span
+          ></label>
+          <input type="radio" name="accordion" id="first" checked />
+          <div class="content">
+            <p>
+              Our Templates are fully editable in Canva, MS Word, and the PDF editor of your choice. 
+            </p>
+          </div>
+        </li>
+        <li>
+          <label for="second"
+            >02 Digital Download<span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="accordion-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                /></svg></span
+          ></label>
+          <input type="radio" name="accordion" id="second" />
+          <div class="content">
+            <p>
+              This is a digital product. You will not receive any physical elements with this purchase.
+            </p>
+          </div>
+        </li>
+        <li>
+          <label for="third"
+            >03 Available Sizes<span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="accordion-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                /></svg></span
+          ></label>
+          <input type="radio" name="accordion" id="third" />
+          <div class="content">
+            <p>
+              US Letter Sizes ( 8.5" x 11") & A4
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="details-text-box">
+      <h2 class="price"><div class="price-green">$</div>3.99</h2>
+      <h3 class="pricing-title">Floral Invoice Template Word/Google Docs for Florists, Event & Wedding Planner Small Businesses  </h3>
+      <div class="pricing-description">
+        <p>This beautiful Invoice Template features delicate cherry blossoms, symbolizing new beginnings and spring, making it an ideal choice for wedding and event planning companies. 
+        The soft pastel colors and refined design also make it perfect for floral businesses.</p>
+
+        <p>This template is fully customizable and compatible with Microsoft Word, Google Docs, and Canva, making it easy to edit and include your branding and personal touches. 
+        It includes all the necessary fields for an invoice such as date, invoice number, description of services/products, and prices, making it easy to use and professional.</p>
+        
+        <p>Don't settle for generic invoices that don't reflect your brand. Stand out from the competition and make a lasting impression with our cherry blossom-inspired invoice template. 
+        Get it now and start converting more clients today!</p>
+        </div>
+       
+        <p class="pricing-description">
+          There are no returns when purchasing a digital templates. Please contact us if you have any problems with your order.</p>
+          
+          <div class="select-an-option">
+            <div class="dropdown">
+              <select id="selectOption" onchange="location = this.value;">
+                <option value="" hidden selected>Select an option</option>
+                <option value="Floral-Stationary-Bundle-ecommerce-detail.html">Full Stationary Bundle</option>
+                <option value="Floral-Invoice-Template-Ecommerce-Template.html">Invoice Template</option>
+                <option value="Floral-Order-Form-Template-Ecommerce-Detail.html">Order Form Template</option>
+                <option value="Floral-Receipt-Template-Ecommerce-Template.html">Receipt Form Template</option>
+                <option value="Floral-Price-List-Template-Ecommerce-Template.html">Price List Template</option>
+                <option value="Floral-Contract-Template-Ecommerce-Template.html">Contract Agreement Template</option>
+                <!-- Add more options here -->
+              </select>
+            </div>
+
+          <div class="button-container"> <span><a href="#cta" class="btn btn--full margin-right-sm" onclick="addToCart(this)">ADD TO CART</a></span> 
+            <span><a href="#cta" class="btn btn--full margin-right-sm" onclick="buyNow(this)">BUY NOW</a></span>
+          </div>
+    </div>
+    
+    </div>
+    
+  </div>
+
+  </section>
+  <footer class=" grid--footer grid--4--cols">
+    <div class="logos">
+    <a href="index.html" class="footer-logo">
+    <img class="logo" alt="ThisisCandA Logo" src="home-page/hero-section/main-logo.png"/></a>
+
+    <div class="social-links">
+      <a href="https://www.instagram.com/thisiscanda/" class="social-icon footer-link" ><img class="instagram-logo" alt="Circular Istagram Logo" src="social-media/instagram.png"/></a> 
+      <a href="https://www.facebook.com/ThisIsCandA" class="social-icon footer-link" ><img class="facebook-logo" alt="Circular facebook Logo" src="social-media/facebook.png"/></a> 
+      <a href="https://www.pinterest.com/thisiscanda" class="social-icon footer-link" ><img class="pinterest-logo" alt="Circular pinterest Logo" src="social-media/pinterest.png"/></a> 
+      <a href="https://www.youtube.com/@ThisIsCandA" class="social-icon footer-link" ><img class="youtube-logo" alt="Circular youtube Logo" src="social-media/youtube.png"/></a>
+      </div>
+      </div>
+  <div class="cta-footer-text-btn">
+    <h2 class ="footer-heading">We Make it easy for you to create</h2>
+<h2 class ="footer-heading">a consistent brand itentity.</h2>
+<button class="footer-button"
+>WORK WITH US</button>
+</div>
+  <div class="nav-col">
+    <p class="footer-heading">BROWSE</p>
+    <ul class="footer-nav">
+      <li><a class="footer-link" href="index.html">Home</a></li>
+      <li><a class="footer-link" href="about-us.html">About</a></li>
+      <li><a class="footer-link" href="contact.html">Services </a></li>
+      <li><a class="footer-link" href="portfolio-2.html">Portfolio</a></li>            
+      <li><a class="footer-link" href="templates.html">Templates</a></li>
+      <li><a class="footer-link" href="blog.html">Blog</a></li>
+    </ul>
+  </div>
+  <div class="nav-col">
+    <p class="footer-heading">SERVICES</p>
+    <ul class="footer-nav">
+      <li><a class="footer-link" href="service-magical-branding.html">Branding</a></li>
+      <li><a class="footer-link" href="service-whimsical-web-design.html">Web Design</a></li>
+      <li><a class="footer-link" href="service-mystical-graphics.html">Graphic Design </a></li>
+      <li><a class="footer-link" href="service-enchanted-marketing.html">Marketing</a></li>
+      <li><a class="footer-link" href="service-captivating-illustration.html">Illustrations</a></li>
+      <li><a class="footer-link" href="service-enlightened-consulting.html">Consulting</a></li>
+
+    </ul>
+  </div>
+</footer><span class="copyright-text-container"><p>© This is C & A.</p>
+<p>All rights reserved</p>
+<p><a class="footer-link" href="terms-and-conditions.html">Terms and Conditions</a></p>
+  <p><a class="footer-link" href="privacy-policy.html">Privacy Policy</a></p></span>
+     </main>
+     <script src="shopping-cart.js"></script>
+     <script src="shopping-cart-overlay.js"></script>
+     <script src="listing-page.js"></script>
+     </body>
+</html>
