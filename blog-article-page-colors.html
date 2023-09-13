@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="hero-description"
+      content=" C & A is a Brand Strategy 
+      &  Graphic Design Agency. We help businesses design their success story with custom 
+      branding solutions that help them stand out and create a lasting 
+      impact in their industry. ."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="home-page/COLORED-WREATH-fav-icon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link href="style-article.css" rel="stylesheet" />
+
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <title>C & A Branding & Graphic Designs - Blog Article</title>
+  </head>
+  <body><button class="btn-mobile-nav">
+      <img src="home-page/menu-outline.svg" class="icon-mobile-nav menu-outline" name="menu-outline">
+      <img src="home-page/close-outline.svg" class="icon-mobile-nav close-outline" name="close-outline"></button>
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li>
+          <a class="main-nav-link" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="portfolio-2.html">Portfolio</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="templates.html">Templates</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="blog.html">Blog</a>
+        </li>
+        <li>
+          <a
+            class="main-nav-link nav-cta"
+            href="contact.html"
+            >Start with Us</a>
+        </li>
+      </ul>   
+
+    </nav>
+      <!-- Shopping Cart Icon -->
+      <div class="cart-icon" id="cart-icon">
+        <img src="home-page/shopping-cart-icon.png" alt="Shopping Cart">
+        <span class="cart-count" id="cart-count">0</span>
+      </div>
+          
+           <!-- Shopping Cart Overlay -->
+           <cart-notification class="cart-overlay" id="cart-overlay">
+            <!-- Content of the Shopping Cart goes here -->
+            <div class="cart-content">
+                <!-- Your cart items will go here -->
+                <h1>My Shopping Cart</h1>
+
+                <div class="shopping-cart">
+                  <div class="product">
+                    <div>
+                      <img
+                        class="product-image"
+                        src="templates-page/main-img/floral-stationary.webp"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <div class="product-title">
+                        Floral Small Business Stationery Bundle for Event & Wedding Planners
+                      </div>
+                    </div>
+                    <div class="product-price">9.99</div>
+                    <div class="product-quantity">
+                      <input type="number" value="2" min="1" />
+                    </div>
+                    <div class="product-removal">
+                      <button class="remove-product">Remove</button>
+                    </div>
+                    <div class="product-line-price">19.98</div>
+                  </div>
+            
+                  <div class="product">
+                    <div>
+                      <img
+                        class="product-image"
+                        src="templates-page/main-img/minimal-stationary.webp"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <div class="product-title">
+                        Professional Minimal Business Starter Kit Stationery Bundle
+                      </div>
+                    </div>
+                    <div class="product-price">9.99</div>
+                    <div class="product-quantity">
+                      <input type="number" value="1" min="1" />
+                    </div>
+                    <div class="product-removal">
+                      <button class="remove-product">Remove</button>
+                    </div>
+                    <div class="product-line-price">9.99</div>
+                  </div>
+            
+                  <div class="totals">
+                    <div class="totals-item">
+                      <label>Subtotal</label>
+                      <div class="totals-value" id="cart-subtotal">29.97</div>
+                    </div>
+                    <div class="totals-item totals-item-total">
+                      <label>Grand Total</label>
+                      <div class="totals-value" id="cart-total">29.97</div>
+                    </div>
+                  </div>
+            
+                  <button class="checkout">Checkout</button>
+                </div>
+            </div>
+            <button class="close-cart" id="close-cart">Close</button>
+        </cart-notification>
+    </div>
+</div>
+    <!-- <div class="privacy-content"> -->
+    <h2 class="blog-header">
+      Blog
+    </h2>
+    <a href="#cta" class="btn btn--full margin-right-sm"
+>SHARE</a>
+    <div class="back-button">
+      <a class="article-button-link" href="javascript:history.back()" onclick="goBack()">Back</a>
+    </div> 
+    <div class="tag-date">
+    <span class="artclie-tag">Branding</span>
+    <h4 class="article-date">22.08.2023</h4>
+  </div>
+
+  <h2 class="article-title">How To Choose the Right Brand Colors - 5 Easy Steps </h2>
+
+<!-- <div class="company-info-container">
+  <div  class="company-img"><span><img src=""
+  alt="company circular image"
+ ></div></span>
+  <div class="company-text-container">
+    <h4 class="employee-name-b">Name LastName</h4>
+    <p class="employee-position">Position @ Company</p>
+  </div>
+</div> -->
+
+<div class="blog-article-opening">
+<div class="blog-article-hero">
+<img src="blog/imgs/colors.webp"
+alt="blog article image"
+class="blog-main-img"></div>
+<p class="article-paragraph-b">Colors play a crucial role in your branding and marketing campaigns. 
+  Colors can evoke emotions from your audience, as well as communicate your brand values. 
+  From Reds, which give off a sense of energy and passion to Blues which invoke trust and calmness. 
+  Choosing the right brand colors is crucial in establishing a strong and captivating brand identity. 
+  We will walk you through the step-by-step process for crafting a brand color palette that aligns with your business objectives and that'll leave your audience mesmerized.
+</p>
+</div>
+
+  <div class="article-section">
+    <h3 class="article-subheading">1. Understand Color Psychology</h3>
+    <p class="article-paragraph">
+      It's important to understand the psychological associations and meanings behind different colors when creating a color palette. 
+      Colors have a profound impact on human psychology, influencing our perceptions and emotions. 
+      Consider what emotions and values you want to your target audience to feel when they engage with your brand and select colors that align with those intentions. 
+
+<h3 class="example-header">Here are a few examples:</h3> 
+<ul>
+  <li>White - clean, innocence, purity</li>
+  <li>Yellow - energy, happiness, creativity</li>
+    <li>Pink - youth, vulnerability, romance</li>
+      <li>Red - passion, action, and love</li>
+        <li>Green - freshness, fertility, growth</li>
+          <li>Blue - peace, calmness, trust</li>
+            <li>Purple - power, luxury, wisdom</li>
+              <li>Black - elegance, classic, mystery</li></ul>
+    </p></div>
+
+    <div class="article-section">
+      <h3 class="article-subheading">2. Defining Your Brand Identity</h3>
+      <p class="article-paragraph">
+        Your brand colors should be a reflection of your brand's essence and resonate with your target audience. 
+        Therefore, before choosing brand colors, it's essential to define your brand identity. Identify your brand values, personality, and target audience. 
+        Craft the message you want to convey and the image you want your brand to project. Is your brand playful or elegant, classic or modern? Who is your target audience? 
+        When are they most likely to use your products to services? Take into account factors such as your industry, competitors, and the preferences of your target market when making color choices.
+      </p></div>
+
+      <div class="article-section">
+        <h3 class="article-subheading">3. Conducting Market Research</h3>
+        <p class="article-paragraph">
+          Market research plays a vital role in understanding your audience and identifying industry trends. 
+          Study your target market to gain insights into their preferences and the colors that appeal to them. 
+          Ask questions such as the age, and the lifestyle of your preferred customers. Analyze your competitors to see how they use colors in their branding and find unique opportunities to stand out. 
+          Consider cultural and regional influences as well, as color meanings can vary across different demographics and geographies.
+        </p></div>
+
+        <div class="article-section">
+          <h3 class="article-subheading">4. Color Theory and Combinations</h3>
+          <p class="article-paragraph">
+            Color theory is a set of rules and guidelines that provides a framework into understanding how colors work together harmoniously. 
+            You can explore color schemes, such as monochromatic, analogous, complementary, and triadic, to create visually pleasing combinations. 
+            It is important to pay attention to color contrast, balance, and readability during this stage to ensure your brand colors work well across various mediums. 
+
+First you must choose one color that best represents your brand values, then find its complementary color, experiment with different shades (adding black) and tints (adding white) to your chosen colors to add depth and versatility to your palette. 
+Finally add a neutral color to complete your brands color palette.</p></div>
+
+<div class="article-section">
+  <h3 class="article-subheading">5. Testing and Finalizing Colors</h3>
+  <p class="article-paragraph">
+    It's now time to test and finalize your brand colors. Apply your brand colors to various touchpoints, such as your logo, website, marketing materials, and social media profiles. 
+    Evaluate how the colors appear on different backgrounds to ensure consistency and effectiveness. Once you're happy with your selection, seek feedback from trusted sources, this may include your target audience. 
+    This will allow you to gain insights and make any necessary refinements.</p></div> 
+
+
+    <h2 class="blog-secondary-head"> Discover Inspiring Brand Color Palettes:</h2>
+          <div class="blog-info-grid">
+            <div class="highlight-info">
+
+              <div class="color-palette-container first-img-section">
+                <div class="color-palette">
+                  <div class="color-box" style="background-color: #4f665d;"></div>
+                  <div class="color-box" style="background-color: #0b4354;"></div>
+                  <div class="color-box" style="background-color: #151f18;"></div>
+                  <div class="color-box" style="background-color: #ebebe8;"></div>
+                  <div class="color-box" style="background-color: #0e796f;"></div>
+                  <!-- Add more color boxes here -->
+                </div>
+                <div class="color-textbox">
+                  <h3 class="color-title">Color Palette</h3>
+                  <p class="color-description">Select colors for your project:</p>
+                  <input type="color" class="color-input" value="#4f665d">
+                  <input type="color" class="color-input" value="#0b4354">
+                  <input type="color" class="color-input" value="#151f18">
+                  <input type="color" class="color-input" value="#ebebe8">
+                  <input type="color" class="color-input" value="#0e796f">
+                  <!-- Add more color input fields here -->
+                </div>
+              </div>
+
+              <div class="color-palette-container second-img-section">
+                <div class="color-palette">
+                  <div class="color-box" style="background-color: #DBB8B4;"></div>
+                  <div class="color-box" style="background-color: #583441;"></div>
+                  <div class="color-box" style="background-color: #A66F6F;"></div>
+                  <div class="color-box" style="background-color: #834944;"></div>
+                  <div class="color-box" style="background-color: #683B46;"></div>
+                  <!-- Add more color boxes here -->
+                </div>
+                <div class="color-textbox">
+                  <h3 class="color-title">Color Palette</h3>
+                  <p class="color-description">Select colors for your project:</p>
+                  <input type="color" class="color-input" value="#DBB8B4">
+                  <input type="color" class="color-input" value="#583441">
+                  <input type="color" class="color-input" value="#A66F6F">
+                  <input type="color" class="color-input" value="#834944">
+                  <input type="color" class="color-input" value="#683B46">
+                  <!-- Add more color input fields here -->
+                </div>
+              </div>
+
+              <div class="color-palette-container third-img-section">
+                <div class="color-palette">
+                  <img src="article-page/background-1.png"
+
+                  <div class="color-box" style="background-color: #FCDDB3;"></div>
+                  <div class="color-box" style="background-color: #EC7B21;"></div>
+                  <div class="color-box" style="background-color: #48627F;"></div>
+                  <div class="color-box" style="background-color: #B6B5CA;"></div>
+                  <div class="color-box" style="background-color: #472D27;"></div>
+                  <!-- Add more color boxes here -->
+                </div>
+                <div class="color-textbox">
+                  <h3 class="color-title">Color Palette</h3>
+                  <p class="color-description">Select colors for your project:</p>
+                  <input type="color" class="color-input" value="#FCDDB3">
+                  <input type="color" class="color-input" value="#EC7B21">
+                  <input type="color" class="color-input" value="#48627F">
+                  <input type="color" class="color-input" value="#B6B5CA">
+                  <input type="color" class="color-input" value="#472D27">
+                  <!-- Add more color input fields here -->
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+<div class="quote-container">
+  <p class="quote-text">Remember that your brand colors can contribute to the overall success of your business by creating a strong emotional connection and enhancing brand recognition. 
+    Choosing the right ones is a strategic process that requires thoughtful consideration and understanding of your brand identity and target audience. The instructions outlined in this guide will help you to be better equipped to make informed decisions and create a visually charming and impactful brand identity. 
+    Begin your journey towards selecting the perfect brand colors today and watch your brand come to life! </p></div>
+<p class="article-paragraph"></p>
+<p class="article-paragraph"></p>
+
+
+</div>
+<!-- ////////// -->
+
+<div class="related-articles-container"> 
+
+  <span><h1 class="related-article-title">Related Articles</h1></span>
+  <div class="related-articles-grid">
+    <div class="related-post">
+    <div class="article"><a href="blog-article-self-care.html">
+      <img class="article-img" src="blog/imgs/robe photo-Recovered.webp" alt="Self Pampering bathroom with a robe" /></a>
+      <div class="article-details"><h3 class="article-title">Self-Care Made Easy: How To Avoid Burnout For Professionals</h3>
+      <p class="article-description">We are stuck between juggling work, personal commitments, and other obligations. Our constant commitments can take a negative toll...</p>
+      <div class="tags">
+        <span class="tag">Self-Care</span>
+      </div>
+      <a href="blog-article-self-care.html" class="read-more">Read More</a></div>
+    </div>
+    </div>
+    <div class="related-post">
+      <div class="article"><a href="blog-article-page-resources.html">
+        <img class="article-img" src="blog/imgs/tools.webp" alt="Tools to help business growth" /></a>
+        <div class="article-details"><h3 class="article-title">10 Free Must Have Tools And Resources For Small Businesses</h3>
+        <p class="article-description">Small businesses often operate with tight budgets and limited resources. However, there are free tools from marketing to financial documents...</p>
+        <div class="tags">
+          <span class="tag">Entrepreneur</span>
+        </div>
+        <a href="blog-article-page-resources.html" class="read-more">Read More</a></div>
+      </div>
+    </div>
+    <div class="related-post">
+      <div class="article"><a href="blog-article-page-business-plan.html">
+        <img class="article-img" src="blog/imgs/business-blog (1).webp" alt="happy entrepreneurs" /></a>
+        <div class="article-details"><h3 class="article-title">How To Write An Effective Business Plan - High Impact & Results-Driven</h3>
+        <p class="article-description">A business plan acts as a roadmap to help you succeed. It should give you a clear vision, strategic direction, and a comprehensive understanding...</p>
+        <div class="tags">
+          <span class="tag">Finance</span>
+        </div>
+        <a href="blog-article-page-business-plan.html" class="read-more">Read More</a> </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ///////// -->
+</div>
+</body>
+<footer class=" grid--footer grid--4--cols">
+  <div class="logos">
+  <a href="index.html" class="footer-logo">
+  <img class="logo" alt="ThisisCandA Logo" src="home-page/hero-section/main-logo.png"/></a>
+
+  <div class="social-links">
+    <a href="https://www.instagram.com/thisiscanda/" class="social-icon footer-link" ><img class="instagram-logo" alt="Circular Istagram Logo" src="social-media/instagram.png"/></a> 
+    <a href="https://www.facebook.com/ThisIsCandA" class="social-icon footer-link" ><img class="facebook-logo" alt="Circular facebook Logo" src="social-media/facebook.png"/></a> 
+    <a href="https://www.pinterest.com/thisiscanda" class="social-icon footer-link" ><img class="pinterest-logo" alt="Circular pinterest Logo" src="social-media/pinterest.png"/></a> 
+    <a href="https://www.youtube.com/@ThisIsCandA" class="social-icon footer-link" ><img class="youtube-logo" alt="Circular youtube Logo" src="social-media/youtube.png"/></a>
+    </div>
+    </div>
+<div class="cta-footer-text-btn">
+  <h2 class ="footer-heading">We Make it easy for you to create</h2>
+<h2 class ="footer-heading">a consistent brand itentity.</h2>
+<button class="footer-button"
+>WORK WITH US</button>
+</div>
+<div class="nav-col">
+  <p class="footer-heading">BROWSE</p>
+  <ul class="footer-nav">
+    <li><a class="footer-link" href="index.html">Home</a></li>
+    <li><a class="footer-link" href="about-us.html">About</a></li>
+    <li><a class="footer-link" href="contact.html">Services </a></li>
+    <li><a class="footer-link" href="portfolio-2.html">Portfolio</a></li>            
+    <li><a class="footer-link" href="templates.html">Templates</a></li>
+    <li><a class="footer-link" href="blog.html">Blog</a></li>
+  </ul>
+</div>
+<div class="nav-col">
+  <p class="footer-heading">SERVICES</p>
+  <ul class="footer-nav">
+    <li><a class="footer-link" href="service-magical-branding.html">Branding</a></li>
+    <li><a class="footer-link" href="service-whimsical-web-design.html">Web Design</a></li>
+    <li><a class="footer-link" href="service-mystical-graphics.html">Graphic Design </a></li>
+    <li><a class="footer-link" href="service-enchanted-marketing.html">Marketing</a></li>
+    <li><a class="footer-link" href="service-captivating-illustration.html">Illustrations</a></li>
+    <li><a class="footer-link" href="service-enlightened-consulting.html">Consulting</a></li>
+
+  </ul>
+</div>
+</footer><span class="copyright-text-container"><p>© This is C & A.</p>
+<p>All rights reserved</p>
+<p><a class="footer-link" href="terms-and-conditions.html">Terms and Conditions</a></p>
+  <p><a class="footer-link" href="privacy-policy.html">Privacy Policy</a></p></span>
+   </main>
+   <script src="shopping-cart.js"></script>
+   <script src="shopping-cart-overlay.js"></script>
+   </body>
+</html>

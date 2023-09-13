@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="hero-description"
+      content=" C & A is a Brand Strategy 
+      &  Graphic Design Agency. We help businesses design their success story with custom 
+      branding solutions that help them stand out and create a lasting 
+      impact in their industry. ."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="home-page/COLORED-WREATH-fav-icon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link href="style-article.css" rel="stylesheet" />
+
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <title>C & A Branding & Graphic Designs - Blog Article</title>
+  </head>
+  <body><button class="btn-mobile-nav">
+      <img src="home-page/menu-outline.svg" class="icon-mobile-nav menu-outline" name="menu-outline">
+      <img src="home-page/close-outline.svg" class="icon-mobile-nav close-outline" name="close-outline"></button>
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li>
+          <a class="main-nav-link" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="portfolio-2.html">Portfolio</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="templates.html">Templates</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="blog.html">Blog</a>
+        </li>
+        <li>
+          <a
+            class="main-nav-link nav-cta"
+            href="contact.html"
+            >Start with Us</a>
+        </li>
+      </ul>   
+
+    </nav>
+      <!-- Shopping Cart Icon -->
+      <div class="cart-icon" id="cart-icon">
+        <img src="home-page/shopping-cart-icon.png" alt="Shopping Cart">
+        <span class="cart-count" id="cart-count">0</span>
+      </div>
+          
+           <!-- Shopping Cart Overlay -->
+           <cart-notification class="cart-overlay" id="cart-overlay">
+            <!-- Content of the Shopping Cart goes here -->
+            <div class="cart-content">
+                <!-- Your cart items will go here -->
+                <h1>My Shopping Cart</h1>
+
+                <div class="shopping-cart">
+                  <div class="product">
+                    <div>
+                      <img
+                        class="product-image"
+                        src="templates-page/main-img/floral-stationary.webp"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <div class="product-title">
+                        Floral Small Business Stationery Bundle for Event & Wedding Planners
+                      </div>
+                    </div>
+                    <div class="product-price">9.99</div>
+                    <div class="product-quantity">
+                      <input type="number" value="2" min="1" />
+                    </div>
+                    <div class="product-removal">
+                      <button class="remove-product">Remove</button>
+                    </div>
+                    <div class="product-line-price">19.98</div>
+                  </div>
+            
+                  <div class="product">
+                    <div>
+                      <img
+                        class="product-image"
+                        src="templates-page/main-img/minimal-stationary.webp"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <div class="product-title">
+                        Professional Minimal Business Starter Kit Stationery Bundle
+                      </div>
+                    </div>
+                    <div class="product-price">9.99</div>
+                    <div class="product-quantity">
+                      <input type="number" value="1" min="1" />
+                    </div>
+                    <div class="product-removal">
+                      <button class="remove-product">Remove</button>
+                    </div>
+                    <div class="product-line-price">9.99</div>
+                  </div>
+            
+                  <div class="totals">
+                    <div class="totals-item">
+                      <label>Subtotal</label>
+                      <div class="totals-value" id="cart-subtotal">29.97</div>
+                    </div>
+                    <div class="totals-item totals-item-total">
+                      <label>Grand Total</label>
+                      <div class="totals-value" id="cart-total">29.97</div>
+                    </div>
+                  </div>
+            
+                  <button class="checkout">Checkout</button>
+                </div>
+            </div>
+            <button class="close-cart" id="close-cart">Close</button>
+        </cart-notification>
+    </div>
+</div>
+    <!-- <div class="privacy-content"> REMOVE? -->
+    <h2 class="blog-header">
+      Blog
+    </h2>
+    <a href="#cta" class="btn btn--full margin-right-sm"
+>SHARE</a>
+    <div class="back-button">
+      <a class="article-button-link" href="javascript:history.back()" onclick="goBack()">Back</a>
+    </div> 
+    <div class="tag-date">
+    <span class="artclie-tag">Branding</span>
+    <h4 class="article-date">22.08.2023</h4>
+  </div>
+ 
+  <h2 class="article-title">Social Media Marketing Zero To Hero - How Small Businesses Can Thrive</h2>
+
+<!-- <div class="company-info-container">
+  <img src=""
+  alt="company circular image"
+  class="company-img">
+  <div class="company-text-container">
+    <h4 class="employee-name-b">Name LastName</h4>
+    <p class="employee-position">Position @ Company</p>
+  </div>
+</div> -->
+
+
+<div>
+<img src="blog/imgs/social.webp"
+alt="blog article image"
+class="blog-main-img">
+<p class="article-paragraph-b">Social media has become integral for small and large businesses alike. It allows them to connect directly to their target audience allowing them to build their brands and drive business. With the right strategies and techniques, even small businesses can achieve remarkable success with social media marketing. This article explores how small businesses can go from zero to hero in social media marketing and leverage these platforms to thrive in their respective industries.
+</p></div>
+
+  <div class="article-section">
+    <h3 class="article-subheading"> Define Your Target Audience & Set Clear Goals:</h3>
+    <p class="article-paragraph">
+      The first step in any marketing campaign is to Set Goals. Outline what goals you want to achieve through your marketing, whether it's increasing brand awareness, driving website traffic, or generating leads. An important aspect of this is to research and know your customers. This helps you to better tailor your content and messaging in a way that resonates with them effectively helping to achieve your goals.
+    </p>
+    </div>
+  <div class="article-section">
+    <h3 class="article-subheading"> Choose the Right Social Media Platforms:</h3>
+    <p class="article-paragraph">
+      Different social media platforms will have different effects on your business. Because of this small business owners should concentrate on the platforms that align with their goals and customers. Conduct research to identify the platforms where your audience is most active and engaged, whether it's Instagram, Pinterest, LinkedIn, or a combination of platforms.
+    </p>
+    <p class="article-paragraph">Here are some factors to consider when selecting the right platforms:</p>
+       <h3 class="lead-list-text">Know Your Customers: </h3>
+  <p class="article-paragraph">
+    Effectively choosing the right social media platforms, requires a deep understanding of your target audience. In order to achieve this, you should research their demographics, interests, online behaviors, and preferred social media platforms.
+  </p>
+    <h3 class="lead-list-text"> Relevant Platforms: </h3>
+  <p class="article-paragraph">
+    Consider the relevance of each social media platform to your specific business and industry. Certain platforms may be better suited for specific industries or target demographics. If you have a visually appealing business such as a fashion brand or an art studio, platforms like Instagram and Pinterest are ideal, as they focus on visual content. On the other hand, if your business is more B2B-focused, platforms like LinkedIn may be more relevant for networking and industry-related discussions.
+  </p>
+    <h3 class="lead-list-text"> Engagement and Activity: </h3>
+  <p class="article-paragraph">
+    Evaluate the level of user engagement and activity on different social media platforms. Look for platforms where users actively participate, share content, and engage with brands. Consider the platform's user base size and their level of interaction with posts and comments. Platforms with high user engagement provide better opportunities to connect with your target audience and build meaningful relationships.
+  </p>
+    <h3 class="lead-list-text"> Features and Capabilities: </h3>
+  <p class="article-paragraph">
+    Test out the features and capabilities offered by each social media platform and how they coincide with your business goals and marketing strategies. Different platforms offer various content formats, advertising options, analytics tools, and targeting capabilities. For example, if you plan to incorporate video content in your social media strategy, platforms like YouTube and TikTok may be more suitable.
+  </p>
+    <h3 class="lead-list-text"> Competition and Market Presence: </h3>
+  <p class="article-paragraph">
+    Research your competitors and industry leaders to identify which social media platforms they are active on and how successful they are in engaging their audience. While it's essential to differentiate your business, analyzing your competitors' social media presence can provide insights into the platforms that are popular within your industry. Remember that your strategy should not be solely based on your competitors but also on your own unique goals and target audience.
+  </p>
+  </div>
+  <div class="article-section">
+    <h3 class="article-subheading">Engage With Your Audience
+    </h3>
+    <p class="article-paragraph">
+      Social media is a two-way communication channel, and engagement is crucial. Respond to comments, messages, and mentions promptly. Encourage conversations and interactions by asking questions, running polls, and hosting giveaways. Show genuine interest in your audience and build relationships by engaging with their content as well.
+    </p>
+  </div>
+  <div class="article-section">
+    <h3 class="article-subheading">Leverage Influencer Partnerships:
+    </h3>
+    <p class="article-paragraph">
+      Influencer marketing has become a powerful strategy for small businesses to reach a wider audience and build credibility. Identify influencers in your industry who align with your brand values and have a significant following. Collaborate with them to create sponsored content or to promote your products or services. Influencers can help amplify your brand's reach and tap into their engaged audience base.
+    </p>
+  </div>
+  <div class="article-section">
+    <h3 class="article-subheading">Finally
+    </h3>
+    <p class="article-paragraph">
+      With the right approach, small businesses can leverage social media marketing to their advantage and achieve remarkable growth. By carefully evaluating the factors outlines in this article small business owners can easily go from zero to a social media marketing hero. 
+    </p>
+  </div>
+</div>
+<div class="related-articles-container"> 
+
+  <span><h1 class="related-article-title">Related Articles</h1></span>
+  <div class="related-articles-grid">
+    <div class="related-post">
+    <div class="article"><a href="blog-article-page-colors.html">
+      <img class="article-img" src="blog/imgs/colors.webp" alt="Color Wheel" /></a>
+      <div class="article-details"><h3 class="article-title">How to Choose the Right Brand Colors- 5 Easy Steps</h3>
+      <p class="article-description">Colors play a crucial role in your branding and marketing campaigns. Colors can evoke emotions from your audience...</p>
+      <div class="tags">
+        <span class="tag">Entrepreneur</span>
+      </div>
+      <a href="blog-article-page-colors.html" class="read-more">Read More</a></div>
+    </div>
+    </div>
+    <div class="related-post">
+      <div class="article"><a href="blog-article-self-care.html">
+        <img class="article-img" src="blog/imgs/robe photo-Recovered.webp" alt="Pampering Bathroom with Robe" /></a>
+        <div class="article-details"><h3 class="article-title">Self-Care Made Easy: How To Avoid Burnout For Professionals</h3>
+        <p class="article-description">We are stuck between juggling work, personal commitments, and other obligations. Our constant commitments can take a negative toll...</p>
+        <div class="tags">
+          <span class="tag">Self-Care</span>
+        </div>
+        <a href="blog-article-self-care.html" class="read-more">Read More</a></div>
+      </div>
+    </div>
+    <div class="related-post">
+      <div class="article"><a href="blog-article-page-resources.html">
+        <img class="article-img" src="blog/imgs/tools.webp" alt="Small Business Tools" /></a>
+        <div class="article-details"><h3 class="article-title">10 Free Must Have Tools And Resources For Small Businesses</h3>
+        <p class="article-description">Small businesses often operate with tight budgets and limited resources. However, there are free tools from marketing to financial documents...</p>
+        <div class="tags">
+          <span class="tag">Finance</span>
+        </div>
+        <a href="blog-article-page-resources.html" class="read-more">Read More</a> </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ///////// -->
+</div>
+</body>
+<footer class=" grid--footer grid--4--cols">
+  <div class="logos">
+  <a href="index.html" class="footer-logo">
+  <img class="logo" alt="ThisisCandA Logo" src="home-page/hero-section/main-logo.png"/></a>
+
+  <div class="social-links">
+    <a href="https://www.instagram.com/thisiscanda/" class="social-icon footer-link" ><img class="instagram-logo" alt="Circular Istagram Logo" src="social-media/instagram.png"/></a> 
+    <a href="https://www.facebook.com/ThisIsCandA" class="social-icon footer-link" ><img class="facebook-logo" alt="Circular facebook Logo" src="social-media/facebook.png"/></a> 
+    <a href="https://www.pinterest.com/thisiscanda" class="social-icon footer-link" ><img class="pinterest-logo" alt="Circular pinterest Logo" src="social-media/pinterest.png"/></a> 
+    <a href="https://www.youtube.com/@ThisIsCandA" class="social-icon footer-link" ><img class="youtube-logo" alt="Circular youtube Logo" src="social-media/youtube.png"/></a>
+    </div>
+    </div>
+<div class="cta-footer-text-btn">
+  <h2 class ="footer-heading">We Make it easy for you to create</h2>
+<h2 class ="footer-heading">a consistent brand itentity.</h2>
+<button class="footer-button"
+>WORK WITH US</button>
+</div>
+<div class="nav-col">
+  <p class="footer-heading">BROWSE</p>
+  <ul class="footer-nav">
+    <li><a class="footer-link" href="index.html">Home</a></li>
+    <li><a class="footer-link" href="about-us.html">About</a></li>
+    <li><a class="footer-link" href="contact.html">Services </a></li>
+    <li><a class="footer-link" href="portfolio-2.html">Portfolio</a></li>            
+    <li><a class="footer-link" href="templates.html">Templates</a></li>
+    <li><a class="footer-link" href="blog.html">Blog</a></li>
+  </ul>
+</div>
+<div class="nav-col">
+  <p class="footer-heading">SERVICES</p>
+  <ul class="footer-nav">
+    <li><a class="footer-link" href="service-magical-branding.html">Branding</a></li>
+    <li><a class="footer-link" href="service-whimsical-web-design.html">Web Design</a></li>
+    <li><a class="footer-link" href="service-mystical-graphics.html">Graphic Design </a></li>
+    <li><a class="footer-link" href="service-enchanted-marketing.html">Marketing</a></li>
+    <li><a class="footer-link" href="service-captivating-illustration.html">Illustrations</a></li>
+    <li><a class="footer-link" href="service-enlightened-consulting.html">Consulting</a></li>
+
+  </ul>
+</div>
+</footer><span class="copyright-text-container"><p>© This is C & A.</p>
+<p>All rights reserved</p>
+<p><a class="footer-link" href="terms-and-conditions.html">Terms and Conditions</a></p>
+  <p><a class="footer-link" href="privacy-policy.html">Privacy Policy</a></p></span>
+   </main>
+   <script src="shopping-cart.js"></script>
+   <script src="shopping-cart-overlay.js"></script>
+   </body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="hero-description"
+      content=" C & A is a Brand Strategy 
+      &  Graphic Design Agency. We help businesses design their success story with custom 
+      branding solutions that help them stand out and create a lasting 
+      impact in their industry. ."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="home-page/COLORED-WREATH-fav-icon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link href="style-article.css" rel="stylesheet" />
+
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+
+    <title>C & A Branding & Graphic Designs - Blog Article</title>
+  </head>
+  <body><button class="btn-mobile-nav">
+      <img src="home-page/menu-outline.svg" class="icon-mobile-nav menu-outline" name="menu-outline">
+      <img src="home-page/close-outline.svg" class="icon-mobile-nav close-outline" name="close-outline"></button>
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li>
+          <a class="main-nav-link" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="portfolio-2.html">Portfolio</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="templates.html">Templates</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="blog.html">Blog</a>
+        </li>
+        <li>
+          <a
+            class="main-nav-link nav-cta"
+            href="contact.html"
+            >Start with Us</a>
+        </li>
+      </ul>   
+
+    </nav>
+      <!-- Shopping Cart Icon -->
+      <div class="cart-icon" id="cart-icon">
+        <img src="home-page/shopping-cart-icon.png" alt="Shopping Cart">
+        <span class="cart-count" id="cart-count">0</span>
+      </div>
+          
+           <!-- Shopping Cart Overlay -->
+           <cart-notification class="cart-overlay" id="cart-overlay">
+            <!-- Content of the Shopping Cart goes here -->
+            <div class="cart-content">
+                <!-- Your cart items will go here -->
+                <h1>My Shopping Cart</h1>
+
+                <div class="shopping-cart">
+                  <div class="product">
+                    <div>
+                      <img
+                        class="product-image"
+                        src="templates-page/main-img/floral-stationary.webp"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <div class="product-title">
+                        Floral Small Business Stationery Bundle for Event & Wedding Planners
+                      </div>
+                    </div>
+                    <div class="product-price">9.99</div>
+                    <div class="product-quantity">
+                      <input type="number" value="2" min="1" />
+                    </div>
+                    <div class="product-removal">
+                      <button class="remove-product">Remove</button>
+                    </div>
+                    <div class="product-line-price">19.98</div>
+                  </div>
+            
+                  <div class="product">
+                    <div>
+                      <img
+                        class="product-image"
+                        src="templates-page/main-img/minimal-stationary.webp"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <div class="product-title">
+                        Professional Minimal Business Starter Kit Stationery Bundle
+                      </div>
+                    </div>
+                    <div class="product-price">9.99</div>
+                    <div class="product-quantity">
+                      <input type="number" value="1" min="1" />
+                    </div>
+                    <div class="product-removal">
+                      <button class="remove-product">Remove</button>
+                    </div>
+                    <div class="product-line-price">9.99</div>
+                  </div>
+            
+                  <div class="totals">
+                    <div class="totals-item">
+                      <label>Subtotal</label>
+                      <div class="totals-value" id="cart-subtotal">29.97</div>
+                    </div>
+                    <div class="totals-item totals-item-total">
+                      <label>Grand Total</label>
+                      <div class="totals-value" id="cart-total">29.97</div>
+                    </div>
+                  </div>
+            
+                  <button class="checkout">Checkout</button>
+                </div>
+            </div>
+            <button class="close-cart" id="close-cart">Close</button>
+        </cart-notification>
+    </div>
+</div>
+    <!-- <div class="privacy-content"> -->
+    <h2 class="blog-header">
+      Blog
+    </h2>
+    <a href="#cta" class="btn btn--full margin-right-sm"
+>SHARE</a>
+    <div class="back-button">
+      <a class="article-button-link" href="javascript:history.back()" onclick="goBack()">Back</a>
+    </div> 
+    <div class="tag-date">
+    <span class="artclie-tag">Self-Care</span>
+    <h4 class="article-date">22.08.2023</h4>
+  </div>
+
+  <h2 class="article-title">10 Free Must Have Tools And Resources For Small Businesses</h2>
+
+<!-- <div class="company-info-container">
+  <img src=""
+  alt="company circular image"
+  class="company-img">
+  <div class="company-text-container">
+    <h4 class="employee-name-b">Name LastName</h4>
+    <p class="employee-position">Position @ Company</p>
+  </div>
+</div> -->
+
+
+<div>
+<img src="blog/imgs/tools.webp"
+alt="blog article image"
+class="blog-main-img">
+<p class="article-paragraph-b">Small businesses often operate with tight budgets and limited resources.  However, there are free tools from marketing to financial documents and organizational tools, to help small businesses streamline their operations. 
+  Let's dive in and discover how these tools and resources can empower your small business. </p></div>
+
+  <div class="article-section">
+    <h3 class="article-subheading">1. Website Builders</h3>
+    <p class="article-paragraph">
+      Building a professional and user-friendly website is crucial for small businesses. To help establish your online presence, you can build your first website for free easy-to-use customizable templates on websites like Wix, and WordPress.
+    </p></div>
+
+    <div class="article-section">
+      <h3 class="article-subheading">2. Social Media Management</h3>
+      <p class="article-paragraph">
+        Social media management can be time-consuming. But it's vital to meaningfully connect with your customers. 
+        Tools like Hootsuite and Buffer allow you to schedule posts, monitor analytics, and streamline your social media marketing efforts across multiple platforms.
+      </p></div>
+
+      <div class="article-section">
+        <h3 class="article-subheading">3. Project Management Software </h3>
+        <p class="article-paragraph">
+          Keeping track of tasks, and deadlines are easier with free project management tools like Trello and Asana. 
+          These platforms help streamline project workflows, assign tasks, and enhance team communication for improved productivity.
+        </p></div>
+
+        <div class="article-section">
+          <h3 class="article-subheading">4. Email Marketing </h3>
+          <p class="article-paragraph">
+            Email marketing remains a powerful tool for small businesses. Tools like Mailchimp and Sendinblue offer free plans that allow you to build and design professional emails and newsletters and automate email campaigns to engage with your audience and drive conversions.
+          </p></div>
+        <div class="article-section">
+          <h3 class="article-subheading">5. Graphic Design Tools </h3>
+          <p class="article-paragraph">
+            Creating eye-catching visuals and graphics are crucial for branding and marketing. Websites like Canva and Pixlr have pre-designed templates for social media posts and more.
+          </p></div>
+        <div class="article-section">
+          <h3 class="article-subheading">6. Accounting Software</h3>
+          <p class="article-paragraph">
+            It's important to keep track of your business finances to be successful. 
+            Free accounting software like Wave and ZipBooks offer features for invoicing, expense tracking, and financial reporting. 
+            This helps you to maintain accurate records and manage your finances effectively.
+          </p></div>
+        <div class="article-section">
+          <h3 class="article-subheading">7. Customer Relationship Management (CRM) Systems </h3>
+          <p class="article-paragraph">
+            A business' growth relies on building and maintaining strong relationships with its audience. 
+            CRM tools like HubSpot CRM and Zoho CRM offer free plans to help you organize customer data, track interactions, and streamline your sales and marketing processes.
+          </p></div>
+        <div class="article-section">
+          <h3 class="article-subheading">8. Content Management Systems (CMS) </h3>
+          <p class="article-paragraph">
+            A CMS is necessary if you already have a website but want complete control over its content. 
+            WordPress.org and Joomla offer free CMS plans that allow you to can edit posts, and other content on your website.
+          </p></div>
+        <div class="article-section">
+          <h3 class="article-subheading">9. SEO Tools </h3>
+          <p class="article-paragraph">
+            Increasing your website's visibility in search engine results is a great way for attracting organic traffic. 
+            Free SEO tools like Google Analytics and Google Search Console offer insights into optimizing your website's performance. 
+          </p></div>
+        <div class="article-section">
+          <h3 class="article-subheading">10. Editable Templates </h3>
+          <p class="article-paragraph">
+            Editable templates offer small businesses a time-saving and cost-effective solution for various tasks. With their pre-designed layouts and customizable elements, these templates eliminate the need to start from scratch and provide a solid foundation for your projects. 
+            By utilizing editable templates, you can ensure consistency in your branding, create professional-looking materials, and allocate your valuable time and resources to other critical business areas. 
+          </p></div>
+
+<div class="article-section">
+  <h3 class="article-subheading">Finally</h3>
+  <p class="article-paragraph">
+    Small businesses can use these as well as any other program that is suitable for their industry as a way to optimize their business operations and marketing efforts. 
+    Once they have been incorporated into a business strategy, they can enhance not only efficiency but also customer engagement.  
+    These improvements can drive sales resulting in a thriving business. 
+
+
+    <div class="related-articles-container"> 
+
+      <span><h1 class="related-article-title">Related Articles</h1></span>
+      <div class="related-articles-grid">
+        <div class="related-post">
+    <div class="article"><a href="blog-article-page-social-media.html">
+      <img class="article-img" src="blog/imgs/social.webp" alt="People using social media apps" /></a>
+      <div class="article-details"><h3 class="article-title">Social Media Marketing Zero To Hero – How Small Businesses Can Thrive</h3>
+      <p class="article-description">Social media has become integral for small and large businesses alike. It allows them to connect directly to their target audience...</p>
+      <div class="tags">
+        <span class="tag">Branding</span>
+      </div>
+      <a href="blog-article-page-social-media.html" class="read-more">Read More</a></div>
+    </div>
+    </div>
+    <div class="related-post">
+      <div class="article"><a href="blog-article-self-care.html">
+        <img class="article-img" src="blog/imgs/robe photo-Recovered.webp" alt="Self Pampering bathroom with a robe" /></a>
+        <div class="article-details"><h3 class="article-title">Self-Care Made Easy: How To Avoid Burnout For Professionals</h3>
+        <p class="article-description">We are stuck between juggling work, personal commitments, and other obligations. Our constant commitments can take a negative toll...</p>
+        <div class="tags">
+          <span class="tag">Self-Care</span>
+        </div>
+        <a href="blog-article-self-care.html" class="read-more">Read More</a></div>
+      </div>
+    </div>
+    <div class="related-post">
+      <div class="article"><a href="blog-article-page-business-plan.html">
+        <img class="article-img" src="blog/imgs/business-blog (1).webp" alt="happy entrepreneurs" /></a>
+        <div class="article-details"><h3 class="article-title">How To Write An Effective Business Plan - High Impact & Results-Driven</h3>
+        <p class="article-description">A business plan acts as a roadmap to help you succeed. It should give you a clear vision, strategic direction, and a comprehensive understanding...</p>
+        <div class="tags">
+          <span class="tag">Finance</span>
+        </div>
+        <a href="blog-article-page-business-plan.html" class="read-more">Read More</a> </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ///////// -->
+</div>
+</body>
+<footer class=" grid--footer grid--4--cols">
+  <div class="logos">
+  <a href="index.html" class="footer-logo">
+  <img class="logo" alt="ThisisCandA Logo" src="home-page/hero-section/main-logo.png"/></a>
+
+  <div class="social-links">
+    <a href="https://www.instagram.com/thisiscanda/" class="social-icon footer-link" ><img class="instagram-logo" alt="Circular Istagram Logo" src="social-media/instagram.png"/></a> 
+    <a href="https://www.facebook.com/ThisIsCandA" class="social-icon footer-link" ><img class="facebook-logo" alt="Circular facebook Logo" src="social-media/facebook.png"/></a> 
+    <a href="https://www.pinterest.com/thisiscanda" class="social-icon footer-link" ><img class="pinterest-logo" alt="Circular pinterest Logo" src="social-media/pinterest.png"/></a> 
+    <a href="https://www.youtube.com/@ThisIsCandA" class="social-icon footer-link" ><img class="youtube-logo" alt="Circular youtube Logo" src="social-media/youtube.png"/></a>
+    </div>
+    </div>
+<div class="cta-footer-text-btn">
+  <h2 class ="footer-heading">We Make it easy for you to create</h2>
+<h2 class ="footer-heading">a consistent brand itentity.</h2>
+<button class="footer-button"
+>WORK WITH US</button>
+</div>
+<div class="nav-col">
+  <p class="footer-heading">BROWSE</p>
+  <ul class="footer-nav">
+    <li><a class="footer-link" href="index.html">Home</a></li>
+    <li><a class="footer-link" href="about-us.html">About</a></li>
+    <li><a class="footer-link" href="contact.html">Services </a></li>
+    <li><a class="footer-link" href="portfolio-2.html">Portfolio</a></li>            
+    <li><a class="footer-link" href="templates.html">Templates</a></li>
+    <li><a class="footer-link" href="blog.html">Blog</a></li>
+  </ul>
+</div>
+<div class="nav-col">
+  <p class="footer-heading">SERVICES</p>
+  <ul class="footer-nav">
+    <li><a class="footer-link" href="service-magical-branding.html">Branding</a></li>
+    <li><a class="footer-link" href="service-whimsical-web-design.html">Web Design</a></li>
+    <li><a class="footer-link" href="service-mystical-graphics.html">Graphic Design </a></li>
+    <li><a class="footer-link" href="service-enchanted-marketing.html">Marketing</a></li>
+    <li><a class="footer-link" href="service-captivating-illustration.html">Illustrations</a></li>
+    <li><a class="footer-link" href="service-enlightened-consulting.html">Consulting</a></li>
+
+  </ul>
+</div>
+</footer><span class="copyright-text-container"><p>© This is C & A.</p>
+<p>All rights reserved</p>
+<p><a class="footer-link" href="terms-and-conditions.html">Terms and Conditions</a></p>
+  <p><a class="footer-link" href="privacy-policy.html">Privacy Policy</a></p></span>
+   </main>
+   <script src="shopping-cart.js"></script>
+   <script src="shopping-cart-overlay.js"></script>
+   </body>
+</html>

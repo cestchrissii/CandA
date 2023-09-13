@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="hero-description"
+      content=" C & A is a Brand Strategy 
+      &  Graphic Design Agency. We help businesses design their success story with custom 
+      branding solutions that help them stand out and create a lasting 
+      impact in their industry. ."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="home-page/COLORED-WREATH-fav-icon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+ 
+    <link href="style-contact.css" rel="stylesheet" />
+
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <title>C & A Branding & Graphic Designs</title>
+  </head>
+  <body>
+    <section class="section-contact-hero">
+      <div class="section-hero-background">
+        <div class="contact-hero-overlay"><div class = "fairy-dust" id="fairy-dust"></div><div class = "fairy-dusts" id="fairy-dusts"></div>
+          <div class= "section-hero-background"><div class="hero-overlay"><div class = "fairy-dust" id="fairy-dust"></div><div class = "fairy-dusts" id="fairy-dusts"></div>
+            <header class="header nav-open">
+              <img
+                class="header-logo"
+                alt="C & A Logo"
+                src="home-page/hero-section/main-logo.png"
+              />
+             
+              <button class="btn-mobile-nav">
+                <img src="home-page/menu-outline.svg" class="icon-mobile-nav menu-outline" name="menu-outline">
+                <img src="home-page/close-outline.svg" class="icon-mobile-nav close-outline" name="close-outline">
+              </button>
+              
+              <nav class="main-nav">
+                <ul class="main-nav-list">
+                  <li>
+                    <a class="main-nav-link" href="index.html">Home</a>
+                  </li>
+                  <li>
+                    <a class="main-nav-link" href="portfolio-2.html">Portfolio</a>
+                  </li>
+                  <li>
+                    <a class="main-nav-link" href="templates.html">Templates</a>
+                  </li>
+                  <li>
+                    <a class="main-nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li>
+                    <a
+                      class="main-nav-link nav-cta"
+                      href="contact.html"
+                      >Start with Us</a>
+                  </li>
+                </ul>   
+        
+              </nav>
+           
+        
+        
+                     <!-- Shopping Cart Icon -->
+             <div class="cart-icon" id="cart-icon">
+              <img src="home-page/shopping-cart-icon.png" alt="Shopping Cart">
+              <span class="cart-count" id="cart-count">0</span>
+            </div>
+                
+                 <!-- Shopping Cart Overlay -->
+                 <cart-notification class="cart-overlay" id="cart-overlay">
+                  <!-- Content of the Shopping Cart goes here -->
+                  <div class="cart-content">
+                      <!-- Your cart items will go here -->
+                      <h1>My Shopping Cart</h1>
+
+                      <div class="shopping-cart">
+                        <div class="product">
+                          <div>
+                            <img
+                              class="product-image"
+                              src="templates-page/main-img/floral-stationary.webp"
+                            />
+                          </div>
+                          <div class="product-details">
+                            <div class="product-title">
+                              Floral Small Business Stationery Bundle for Event & Wedding Planners
+                            </div>
+                          </div>
+                          <div class="product-price">9.99</div>
+                          <div class="product-quantity">
+                            <input type="number" value="2" min="1" />
+                          </div>
+                          <div class="product-removal">
+                            <button class="remove-product">Remove</button>
+                          </div>
+                          <div class="product-line-price">19.98</div>
+                        </div>
+                  
+                        <div class="product">
+                          <div>
+                            <img
+                              class="product-image"
+                              src="templates-page/main-img/minimal-stationary.webp"
+                            />
+                          </div>
+                          <div class="product-details">
+                            <div class="product-title">
+                              Professional Minimal Business Starter Kit Stationery Bundle
+                            </div>
+                          </div>
+                          <div class="product-price">9.99</div>
+                          <div class="product-quantity">
+                            <input type="number" value="1" min="1" />
+                          </div>
+                          <div class="product-removal">
+                            <button class="remove-product">Remove</button>
+                          </div>
+                          <div class="product-line-price">9.99</div>
+                        </div>
+                  
+                        <div class="totals">
+                          <div class="totals-item">
+                            <label>Subtotal</label>
+                            <div class="totals-value" id="cart-subtotal">29.97</div>
+                          </div>
+                          <div class="totals-item totals-item-total">
+                            <label>Grand Total</label>
+                            <div class="totals-value" id="cart-total">29.97</div>
+                          </div>
+                        </div>
+                  
+                        <button class="checkout">Checkout</button>
+                      </div>
+                  </div>
+                  <button class="close-cart" id="close-cart">Close</button>
+              </cart-notification>
+              </div>
+          </div>
+
+              <div class="hero-text-box">
+              <h2 class="contact-heading-primary">
+                LET'S MAKE SOMETHING MAGICAL TOGETHER!
+              </h2>
+              <h2 class="contact-heading-primary">
+                LET'S CHAT & BRING YOUR VISION TO LIFE
+              </h2></div>
+          
+          </div>
+        </section>
+
+            <div class="start-project">
+              <h1 class="start-header-text">START A PROJECT</h1>
+              <div class="cta-form" > 
+                <div class="input-field">
+                <label for = "full-name">Full Name</label>
+                <input id="full-name" type="text" placeholder="John Smith" name="full-name" required></div>
+              <div class="input-field">  
+                <label for = "email">Email Address</label>
+              <input id="email" type="email" placeholder="me@example.com" name="email" required></div>
+               <div class="input-field"> 
+              <label for = "organization-name">Organization Name</label>
+                <input id="organization-name" type="text" placeholder="John Smith Inc." name="organization-name" required></div>
+              <div class="input-field">
+                <label for = "budget">Budget</label>
+              <input id="budget" type="number" placeholder="$Least - $Maximum" name="budget" required></div>
+              <div class="input-field">
+              <label for = "project-details">Tell Us A Bit About Your Project</label>
+                <input id="project-details" type="text" placeholder="Tell Us A Bit About Your Project" name="project-details" required></div>
+              <div class="input-field">
+                <label for = "timeline">Timeline</label>
+              <input id="timeline" type="text" placeholder="Timeline" name="timeline" required></div>
+              <div class="input-field-subscribe">
+                <label class="check-box">
+                  <input type="checkbox" id="newsletter" name="newsletter" value="yes" class="checkbox"> </label><h2 class="check-text">Join Our Creative Collective & never miss a beat! Subscribe to our newsletter now.</h2>
+                  
+                </div>
+              <button class="btn btn--form" input type="submit" value="Submit">Submit</button>
+              </div>
+            </div>
+
+              <div class="services-list">
+                <h2 class="service-head">OUR SERVICES</h2>
+
+                <div class="services-grid">
+                <div class="service-container">
+                  <img src="portfolio-page/imgs/food-plug.webp"
+                  class="service-img"
+                  alt="food plug brand mocked up onto food related items: cups, containers...">
+                  <h3 class="service-title">
+                    Magical Branding
+                  </h3>
+                  <p class="service-text">Our magical branding package is perfect for those who want to create a captivating and unforgettable brand experience. From custom logos to brand guidelines, we'll help you tell your story in a way that's both authentic and spellbinding.</p>
+                  <a class="service-more-info" href="service-magical-branding.html">Read Now</a>
+                </div>
+
+                <div class="service-container">
+                  <img src="services-imgs/web-design/coding-glasses.webp"
+                  class="service-img"
+                  alt="food plug brand mocked up onto food related items: cups, containers...">
+                  <h3 class="service-title">
+                    Whimsical Web Design
+                  </h3>
+                  <p class="service-text">Our whimsical web design package will help you create an online presence that's both captivating and functional. From custom layouts to enchanting animations, we'll work with you to create a website that truly represents your brand.</p>
+                  <a class="service-more-info" href="service-whimsical-web-design.html">Read Now</a>
+                </div>
+
+                <div class="service-container">
+                  <img src="home-page/hero-section/slideshow-1/slider-photo-4.webp"
+                  class="service-img"
+                  alt="food plug brand mocked up onto food related items: cups, containers...">
+                  <h3 class="service-title">
+                    Mystical Graphics
+                  </h3>
+                  <p class="service-text">Our team of talented designers will work with you to create stunning graphics that capture the essence of your brand. From logos to promotional materials, we'll help you stand out in a crowded marketplace.</p>
+                  <a class="service-more-info" href="service-mystical-graphics.html">Read Now</a>
+                </div>
+
+                <div class="service-container">
+                  <img src="services-imgs/business-marketing.webp"
+                  class="service-img"
+                  alt="food plug brand mocked up onto food related items: cups, containers...">
+                  <h3 class="service-title">
+                    Enchanted Marketing
+                  </h3>
+                  <p class="service-text">Our enchanted marketing package is designed to help you reach your target audience in a way that's both engaging and effective. From social media campaigns to email marketing, we'll help you create a strategy that works like magic.</p>
+                  <a class="service-more-info" href="service-enchanted-marketing.html">Read Now</a>
+                </div>
+
+                <div class="service-container">
+                  <img src="templates-page/main-img/cloud-coloring-book.webp"
+                  class="service-img"
+                  alt="food plug brand mocked up onto food related items: cups, containers...">
+                  <h3 class="service-title">
+                    Captivating Illustration
+                  </h3>
+                  <p class="service-text">Our team of illustrators will bring your brand to life with custom illustrations that are both playful and sophisticated. Whether you need illustrations for a book, website, or marketing campaign, we'll help you create an unforgettable visual experience.</p>
+                  <a class="service-more-info" href="service-captivating-illustration.html">Read Now</a>
+                </div>
+
+                <div class="service-container">
+                  <img src="services-imgs/business-consulting.webp"
+                  class="service-img"
+                  alt="food plug brand mocked up onto food related items: cups, containers...">
+                  <h3 class="service-title">
+                    Enlightened Consulting
+                  </h3>
+                  <p class="service-text">Our enlightened consulting package is perfect for those who need a little guidance on their branding journey. From brand strategy to creative direction, we'll work with you to develop a plan that will help you achieve your goals and bring your brand to life.</p>
+                  <a class="service-more-info" href="service-enlightened-consulting.html">Read Now</a>
+
+                </div>
+                
+              </div>
+              </div>
+
+            </section>
+
+            <section class="cta-contact-bottom">
+              <ul class="cta-faq-list">
+                <li>
+                  <p class = "question">Are you struggling to bring your vision for your business to life? </p>
+                </li>
+                <li>
+                  <p class = "question">Do you feel like your brand is not conveying the message you want to send to your audience?</p>
+                </li>
+                <li>
+                  <p class = "question">Or maybe you're just overwhlemed with all the tasks that come with running your business?</p>
+                </li>
+                <h4 class="service-cta-question">We understand, and We're here to help!</h4>
+                <p class="service-cta-p">Our services are tailored to meet your unique needs, whether it's designing a brand identity, creating stunning graphics, or developing  a  marketing strategy. Let us take care of the design and marketing aspects of your business so you can focus on your passion and grow your business.</p>
+                <h4 class="service-cta-question">Book a consultation with us today and let's start bringing your vision to life. </h4>
+              </ul>
+              <div class="cta-bottom-text">
+                <div class="cta-bottom">
+                  <h1 class="start-a-project">
+                   Start A Project
+                  </h1>
+                  <h2 class="unlock-journey">Unlock Your Creative Journey Today!</h2>
+                  </div>
+                  <div class>
+                    
+                  <button class="btn btn--form"><a href="contact.html" >BOOK NOW</a></button></div>
+                
+              </div>
+              <span class="section-border">
+                <img 
+                src="home-page/hero-section/section-border.png"
+                alt="shiny light golden rectangular border spaning width of page to create a seperation"
+                class="section-border-img">
+              </span>
+            </section>
+
+            <footer class=" grid--footer grid--4--cols">
+              <div class="logos">
+              <a href="index.html" class="footer-logo">
+              <img class="logo" alt="ThisisCandA Logo" src="home-page/hero-section/main-logo.png"/></a>
+        
+              <div class="social-links">
+                <a href="https://www.instagram.com/thisiscanda/" class="social-icon footer-link" ><img class="instagram-logo" alt="Circular Istagram Logo" src="social-media/instagram.png"/></a> 
+                <a href="https://www.facebook.com/ThisIsCandA" class="social-icon footer-link" ><img class="facebook-logo" alt="Circular facebook Logo" src="social-media/facebook.png"/></a> 
+                <a href="https://www.pinterest.com/thisiscanda" class="social-icon footer-link" ><img class="pinterest-logo" alt="Circular pinterest Logo" src="social-media/pinterest.png"/></a> 
+                <a href="https://www.youtube.com/@ThisIsCandA" class="social-icon footer-link" ><img class="youtube-logo" alt="Circular youtube Logo" src="social-media/youtube.png"/></a>
+                </div>
+                </div>
+            <div class="cta-footer-text-btn">
+              <h2 class ="footer-heading">We Make it easy for you to create</h2>
+    <h2 class ="footer-heading">a consistent brand itentity.</h2>
+    <button class="footer-button"
+    >WORK WITH US</button>
+    </div>
+            <div class="nav-col">
+              <p class="footer-heading">BROWSE</p>
+              <ul class="footer-nav">
+                <li><a class="footer-link" href="index.html">Home</a></li>
+                <li><a class="footer-link" href="about-us.html">About</a></li>
+                <li><a class="footer-link" href="contact.html">Services </a></li>
+                <li><a class="footer-link" href="portfolio-2.html">Portfolio</a></li>            
+                <li><a class="footer-link" href="templates.html">Templates</a></li>
+                <li><a class="footer-link" href="blog.html">Blog</a></li>
+              </ul>
+            </div>
+            <div class="nav-col">
+              <p class="footer-heading">SERVICES</p>
+              <ul class="footer-nav">
+                <li><a class="footer-link" href="service-magical-branding.html">Branding</a></li>
+                <li><a class="footer-link" href="service-whimsical-web-design.html">Web Design</a></li>
+                <li><a class="footer-link" href="service-mystical-graphics.html">Graphic Design </a></li>
+                <li><a class="footer-link" href="service-enchanted-marketing.html">Mark   eting</a></li>
+                <li><a class="footer-link" href="service-captivating-illustration.html">Illustrations</a></li>
+                <li><a class="footer-link" href="service-enlightened-consulting.html">Consulting</a></li>
+    
+              </ul>
+            </div>
+        </footer><span class="copyright-text-container"><p>© This is C & A.</p>
+          <p>All rights reserved</p>
+          <p><a class="footer-link" href="terms-and-conditions.html">Terms and Conditions</a></p>
+          <p><a class="footer-link" href="privacy-policy.html">Privacy Policy</a></p></span> 
+          </main>
+        </div>
+      </div>
+    </section>
+    <script src="shopping-cart.js"></script>
+    <script src="shopping-cart-overlay.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>

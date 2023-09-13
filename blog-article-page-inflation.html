@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="hero-description"
+      content=" C & A is a Brand Strategy 
+      &  Graphic Design Agency. We help businesses design their success story with custom 
+      branding solutions that help them stand out and create a lasting 
+      impact in their industry. ."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="home-page/COLORED-WREATH-fav-icon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link href="style-article.css" rel="stylesheet" />
+
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <title>C & A Branding & Graphic Designs - Blog Article</title>
+  </head>
+  <body><button class="btn-mobile-nav">
+      <img src="home-page/menu-outline.svg" class="icon-mobile-nav menu-outline" name="menu-outline">
+      <img src="home-page/close-outline.svg" class="icon-mobile-nav close-outline" name="close-outline"></button>
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li>
+          <a class="main-nav-link" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="portfolio-2.html">Portfolio</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="templates.html">Templates</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="blog.html">Blog</a>
+        </li>
+        <li>
+          <a
+            class="main-nav-link nav-cta"
+            href="contact.html"
+            >Start with Us</a>
+        </li>
+      </ul>   
+
+    </nav>
+      <!-- Shopping Cart Icon -->
+      <div class="cart-icon" id="cart-icon">
+        <img src="home-page/shopping-cart-icon.png" alt="Shopping Cart">
+        <span class="cart-count" id="cart-count">0</span>
+      </div>
+          
+           <!-- Shopping Cart Overlay -->
+           <cart-notification class="cart-overlay" id="cart-overlay">
+            <!-- Content of the Shopping Cart goes here -->
+            <div class="cart-content">
+                <!-- Your cart items will go here -->
+                <h1>My Shopping Cart</h1>
+
+                <div class="shopping-cart">
+                  <div class="product">
+                    <div>
+                      <img
+                        class="product-image"
+                        src="templates-page/main-img/floral-stationary.webp"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <div class="product-title">
+                        Floral Small Business Stationery Bundle for Event & Wedding Planners
+                      </div>
+                    </div>
+                    <div class="product-price">9.99</div>
+                    <div class="product-quantity">
+                      <input type="number" value="2" min="1" />
+                    </div>
+                    <div class="product-removal">
+                      <button class="remove-product">Remove</button>
+                    </div>
+                    <div class="product-line-price">19.98</div>
+                  </div>
+            
+                  <div class="product">
+                    <div>
+                      <img
+                        class="product-image"
+                        src="templates-page/main-img/minimal-stationary.webp"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <div class="product-title">
+                        Professional Minimal Business Starter Kit Stationery Bundle
+                      </div>
+                    </div>
+                    <div class="product-price">9.99</div>
+                    <div class="product-quantity">
+                      <input type="number" value="1" min="1" />
+                    </div>
+                    <div class="product-removal">
+                      <button class="remove-product">Remove</button>
+                    </div>
+                    <div class="product-line-price">9.99</div>
+                  </div>
+            
+                  <div class="totals">
+                    <div class="totals-item">
+                      <label>Subtotal</label>
+                      <div class="totals-value" id="cart-subtotal">29.97</div>
+                    </div>
+                    <div class="totals-item totals-item-total">
+                      <label>Grand Total</label>
+                      <div class="totals-value" id="cart-total">29.97</div>
+                    </div>
+                  </div>
+            
+                  <button class="checkout">Checkout</button>
+                </div>
+            </div>
+            <button class="close-cart" id="close-cart">Close</button>
+        </cart-notification>
+    </div>
+</div>
+    <!-- <div class="privacy-content"> REMOVE? -->
+    <h2 class="blog-header">
+      Blog
+    </h2>
+    <a href="#cta" class="btn btn--full margin-right-sm"
+>SHARE</a>
+    <div class="back-button">
+      <a class="article-button-link" href="javascript:history.back()" onclick="goBack()">Back</a>
+    </div> 
+    <div class="tag-date">
+    <span class="artclie-tag">Economics</span>
+    <h4 class="article-date">22.08.2023</h4>
+  </div>
+ 
+  <h2 class="article-title">Inflation Exposed: Expert Tips To Preserve And Grow Your Wealth</h2>
+
+<!-- <div class="company-info-container">
+  <img src=""
+  alt="company circular image"
+  class="company-img">
+  <div class="company-text-container">
+    <h4 class="employee-name-b">Name LastName</h4>
+    <p class="employee-position">Position @ Company</p>
+  </div>
+</div> -->
+
+
+<div>
+<img src="blog/imgs/cover wpattern (1).webp"
+alt="blog article image"
+class="blog-main-img">
+<p class="article-paragraph-b">We have watched, for the past few years as inflation grew to record heights. Inflation erodes your purchasing power over time eating away at your savings. This means it's vital to take proactive steps to maintain and grow your wealth. Today we'll take a deeper look into inflation, how it impacts your finances, and finally provide expert tips that'll help you to protect your wealth against inflation. By understanding the dynamics of inflation and implementing effective strategies, you can safeguard your financial future and make your money work harder for you.
+</p>
+  <p class="article-paragraph-note"> Note: This blog post provides general information and does not constitute financial advice. 
+</p></div>
+
+  <div class="article-section">
+    <h3 class="article-subheading"> Understanding Inflation</h3>
+    <p class="article-paragraph">
+      The general rise in prices for all goods and services is known as inflation. It's calculating by measuring the annual percentage change in the Consumer Price Index (CPI). As prices increase, your money affords you fewer goods and services, resulting in a decrease in purchasing power. Government regulations, changes in supply and demand, and the current economic conditions can easily impact inflation. Demand-pull inflation occurs when demand exceeds supply, driving prices higher. Cost-push inflation occurs when production costs, such as wages or raw materials, increase, and businesses pass those costs onto consumers. Inflation impacts the broader economy in either a positive or a negative way, impacting employment, interest rates, investment, and overall economic stability.
+    </p>
+    <p class="article-paragraph"> Throughout history, there have been instances of high inflation rates, leading to significant economic challenges such as hyperinflation in Germany during the Weimar Republic, the inflationary period in the United States during the 1970s, and our most recent examples being the global inflation that we've all seen during the COVID - 19 pandemic, only to be exacerbated by the War between Ukraine and Russia.</p>
+    </div>
+  <div class="article-section">
+    <h3 class="article-subheading"> Impact of Inflation on Your Wealth</h3>
+    <p class="article-paragraph">
+      Planning for retirement or long-term financial goals requires considering the eroding effects of inflation. We will emphasize the need to incorporate inflation into financial projections to ensure a sustainable and secure future.
+    </p>
+    <h3 class="lead-list-text">Effect on Cash: </h3>
+  <p class="article-paragraph">
+    One of the most apparent impacts of inflation is the diminishing value of cash savings. As prices rise, your money can buy fewer goods and services. Holding onto cash in times of inflation for extended periods can result in a real-time loss of purchasing power, making it essential to consider alternative strategies to protect against inflation.
+  </p>
+    <h3 class="lead-list-text"> Impact on Investments: </h3>
+  <p class="article-paragraph">
+    Stocks, bonds, and other financial instruments can easily erode as inflation rises. While these assets have the potential to generate returns, if the rate of inflation exceeds the investment returns, the real value of the investment decreases. This can result in a reduction in overall wealth and slower progress toward financial goals.
+  </p>
+    <h3 class="lead-list-text">   Real Estate: </h3>
+  <p class="article-paragraph">
+    Inflation can have a huge impact on the Real Estate market as well. Property values can rise in response to inflation; however, the costs of maintenance, repairs, and property taxes may increase. It is crucial to consider the potential effects of inflation when investing in real estate or owning property as part of your wealth portfolio.
+  </p>
+    <h3 class="lead-list-text">  Cost of Borrowing: </h3>
+  <p class="article-paragraph">
+    Inflation not only Real Estate but also affects the cost of borrowing money. As the overall price level increases, lenders may raise interest rates to compensate for the diminishing purchasing power of money. This can make borrowing more expensive, affecting your ability to finance projects or investments.
+  </p>
+    <h3 class="lead-list-text">  Impact on Fixed-Income Investments: </h3>
+  <p class="article-paragraph">
+    Fixed-income investments such as bonds and certificates of deposit can be particularly vulnerable to inflation. The return on your investments can be reduced or even fall to a negative return if the interest rate on your investment drops below the inflation rate.
+  </p>
+  </div>
+  <div class="article-section">
+    <h3 class="article-subheading">Expert Tips to Preserve and Grow Your Wealth  </h3>
+    <p class="article-paragraph">
+   <ul>
+<li><h3 class="lead-list-text">Diversify Your Investments:</h3> Diversification is a key strategy for reducing the effect of inflation on your wealth. In times of inflation, certain assets outperform others. Diversifying can help you to capture gains and cushion losses by including a variety of asset classes in your portfolio. </li>
+<li><h3 class="lead-list-text">Consider Inflation-Protected Assets: </h3> There are specific assets designed to ensure purchasing power during inflation. The government provides consumers a bond investment option in which the principal value changes proportionally with the Consumer Price Index, these bonds are called Treasury Inflation-Protected Securities (TIPS). Investing in TIPS can provide a buffer against inflation, as the bond's value increases along with inflation, ensuring that your investment keeps up with rising prices.  </li>
+<li><h3 class="lead-list-text">Invest in Real Assets: </h3> There are a few real assets that are considered tangible and can withstand inflation, such as Real Estate, Precious Metals, Agriculture goods, and various commodities. These tangible assets have intrinsic value and tend to hold their worth even in times of inflation. Investing in real estate properties, residential or commercial properties, can provide both capital appreciation and rental income, which can help counter the erosion of purchasing power caused by inflation. </li>
+</ul>
+    </p></div>
+  <div class="article-section">
+    <h3 class="article-subheading">Finally
+    </h3>
+    <p class="article-paragraph">
+      Inflation is a constant factor that can impact your finances. By understanding it's how it affects and implementing strategies to preserve and grow your wealth, you can navigate the challenges posed by inflation and achieve long-term financial success. 
+    </p>
+  </div>
+</div>
+<div class="related-articles-container"> 
+
+  <span><h1 class="related-article-title">Related Articles</h1></span>
+  <div class="related-articles-grid">
+    <div class="related-post">
+    <div class="article"><a href="blog-article-page-social-media.html">
+      <img class="article-img" src="blog/imgs/social.webp" alt="People using social media apps" /></a>
+      <div class="article-details"><h3 class="article-title">Social Media Marketing Zero To Hero - How Small Businesses Can Thrive</h3>
+      <p class="article-description">Social media has become integral for small and large businesses alike. It allows them to connect directly to their target audience...</p>
+      <div class="tags">
+        <span class="tag">Entrepreneur</span>
+      </div>
+      <a href="blog-article-page-social-media.html" class="read-more">Read More</a></div>
+    </div>
+    </div>
+    <div class="related-post">
+      <div class="article"><a href="blog-article-self-care.html">
+        <img class="article-img" src="blog/imgs/robe photo-Recovered.webp" alt="Self Pampering bathroom with a robe" /></a>
+        <div class="article-details"><h3 class="article-title">Self-Care Made Easy: How To Avoid Burnout For Professionals</h3>
+        <p class="article-description">We are stuck between juggling work, personal commitments, and other obligations. Our constant commitments can take a negative toll...</p>
+        <div class="tags">
+          <span class="tag">Self-Care</span>
+        </div>
+        <a href="blog-article-self-care.html" class="read-more">Read More</a></div>
+      </div>
+    </div>
+    <div class="related-post">
+      <div class="article"><a href="blog-article-page-business-plan.html">
+        <img class="article-img" src="blog/imgs/business-blog (1).webp" alt="happy entrepreneurs" /></a>
+        <div class="article-details"><h3 class="article-title">How To Write An Effective Business Plan - High Impact & Results-Driven</h3>
+        <p class="article-description">A business plan acts as a roadmap to help you succeed. It should give you a clear vision, strategic direction, and a comprehensive understanding...</p>
+        <div class="tags">
+          <span class="tag">Finance</span>
+        </div>
+        <a href="blog-article-page-business-plan.html" class="read-more">Read More</a> </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ///////// -->
+</div>
+</body>
+<footer class=" grid--footer grid--4--cols">
+  <div class="logos">
+  <a href="index.html" class="footer-logo">
+  <img class="logo" alt="ThisisCandA Logo" src="home-page/hero-section/main-logo.png"/></a>
+
+  <div class="social-links">
+    <a href="https://www.instagram.com/thisiscanda/" class="social-icon footer-link" ><img class="instagram-logo" alt="Circular Istagram Logo" src="social-media/instagram.png"/></a> 
+    <a href="https://www.facebook.com/ThisIsCandA" class="social-icon footer-link" ><img class="facebook-logo" alt="Circular facebook Logo" src="social-media/facebook.png"/></a> 
+    <a href="https://www.pinterest.com/thisiscanda" class="social-icon footer-link" ><img class="pinterest-logo" alt="Circular pinterest Logo" src="social-media/pinterest.png"/></a> 
+    <a href="https://www.youtube.com/@ThisIsCandA" class="social-icon footer-link" ><img class="youtube-logo" alt="Circular youtube Logo" src="social-media/youtube.png"/></a>
+    </div>
+    </div>
+<div class="cta-footer-text-btn">
+  <h2 class ="footer-heading">We Make it easy for you to create</h2>
+<h2 class ="footer-heading">a consistent brand itentity.</h2>
+<button class="footer-button"
+>WORK WITH US</button>
+</div>
+<div class="nav-col">
+  <p class="footer-heading">BROWSE</p>
+  <ul class="footer-nav">
+    <li><a class="footer-link" href="index.html">Home</a></li>
+    <li><a class="footer-link" href="about-us.html">About</a></li>
+    <li><a class="footer-link" href="contact.html">Services </a></li>
+    <li><a class="footer-link" href="portfolio-2.html">Portfolio</a></li>            
+    <li><a class="footer-link" href="templates.html">Templates</a></li>
+    <li><a class="footer-link" href="blog.html">Blog</a></li>
+  </ul>
+</div>
+<div class="nav-col">
+  <p class="footer-heading">SERVICES</p>
+  <ul class="footer-nav">
+    <li><a class="footer-link" href="service-magical-branding.html">Branding</a></li>
+    <li><a class="footer-link" href="service-whimsical-web-design.html">Web Design</a></li>
+    <li><a class="footer-link" href="service-mystical-graphics.html">Graphic Design </a></li>
+    <li><a class="footer-link" href="service-enchanted-marketing.html">Marketing</a></li>
+    <li><a class="footer-link" href="service-captivating-illustration.html">Illustrations</a></li>
+    <li><a class="footer-link" href="service-enlightened-consulting.html">Consulting</a></li>
+
+  </ul>
+</div>
+</footer><span class="copyright-text-container"><p>© This is C & A.</p>
+<p>All rights reserved</p>
+<p><a class="footer-link" href="terms-and-conditions.html">Terms and Conditions</a></p>
+  <p><a class="footer-link" href="privacy-policy.html">Privacy Policy</a></p></span>
+   </main>
+   <script src="shopping-cart.js"></script>
+   <script src="shopping-cart-overlay.js"></script>
+   </body>
+</html>
