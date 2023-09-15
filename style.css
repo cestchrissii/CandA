@@ -105,20 +105,18 @@ nav {
 }
 
 .icon-mobile-nav {
-  height: 4rem;
-  width: 4.8rem;
+  height: 1rem;
+  width: 1.8rem;
   color: #342949;
 }
-.icon-mobile-nav [name="close-outline"] {
+.icon-mobile-nav[name="close-outline"] {
   display: none;
 }
-
 .section-hero-background {
   height: 100vh;
   background-image: url(home-page/hero-section/slideshow-1/slider-photo-1.png);
   background-size: cover;
   padding: 0;
-  position: relative;
 }
 
 .hero {
@@ -263,12 +261,10 @@ nav a:link {
 nav a:link:last-child {
   margin-right: 0;
 }
-button {
+/* button {
   font-size: 1.2rem;
   padding: 1.2rem 2.4rem;
   cursor: pointer;
-  /* top: 50px;
-  left: 50px; */
   bottom: 50px;
   right: 50px;
   border-radius: 50px;
@@ -281,7 +277,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-}
+} */
 
 .main-nav-list {
   list-style: none;
