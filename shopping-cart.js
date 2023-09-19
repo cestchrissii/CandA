@@ -189,14 +189,14 @@ checkoutButton.addEventListener("click", checkout);
 // ... (rest of the previous code)
 
 // Clear existing cart items
-// cartItems.innerHTML = "";
+cartItems.innerHTML = "";
 
 // Populate cart with items
-// cart.forEach((item) => {
-//   const cartItem = document.createElement("li");
-//   cartItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
-//   cartItems.appendChild(cartItem);
-// });
+cart.forEach((item) => {
+  const cartItem = document.createElement("li");
+  cartItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+  cartItems.appendChild(cartItem);
+});
 
 // Function to update the cart display
 function updateCartDisplay() {

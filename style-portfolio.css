@@ -127,9 +127,12 @@ nav {
   color: #342949;
 }
 
-.close-outline {
+.icon-mobile-nav[name="close-outline"] {
   display: none;
 }
+/* .close-outline {
+  display: none;
+} */
 
 .cart-icon {
   position: relative;
