@@ -118,21 +118,18 @@ nav {
   cursor: pointer;
   display: none;
 }
-.mobile-nav-btn {
-  padding: 0;
-}
+
 .icon-mobile-nav {
-  height: 4.8rem;
+  height: 4.8 rem;
   width: 4.8rem;
   color: #342949;
 }
-
 .icon-mobile-nav[name="close-outline"] {
   display: none;
 }
-/* .close-outline {
-  display: none;
-} */
+.mobile-nav-btn {
+  padding: 0;
+}
 
 .cart-icon {
   position: relative;
@@ -390,7 +387,17 @@ nav {
   transform: translateY(0);
   opacity: 1;
 }
-
+.footer-button {
+  font-size: 2.4rem;
+  border-radius: 50px;
+  background: linear-gradient(3deg, #e8ca91 0%, #f8f5ce 50.52%, #e5c275 100%);
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  padding: 8px;
+}
 @media (max-width: 56.25em) {
   .social-links {
     gap: 2.4rem;
@@ -414,6 +421,17 @@ nav {
   }
   .main-nav-link:link,
   .main-nav-link:visited {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 51em) {
+  .client-review {
+    font-size: 2.4rem;
+  }
+  .portfolio-name {
+    font-size: 1.8rem;
+  }
+  .portfolio-tag {
     font-size: 1.4rem;
   }
 }
@@ -454,11 +472,11 @@ nav {
     grid-template-columns: 1fr;
   }
 }
-
-@media (max-width: 50em) {
+@media (max-width: 62.5em) {
   /* mobile navigation */
   .btn-mobile-nav {
     display: contents;
+    z-index: 1;
   }
 
   .main-nav {
@@ -473,7 +491,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.5s;
+    transition: all 2s;
 
     /* hide navigation with transitions*/
     opacity: 0;
@@ -488,13 +506,11 @@ nav {
     transform: translateX(0);
   }
 
-  .close-outline {
+  .nav-open .icon-mobile-nav[name="close-outline"] {
     display: block;
-    align-self: flex-start;
-    z-index: 2;
+    z-index: 1;
   }
-
-  .menu-outline {
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
   }
 
@@ -502,9 +518,7 @@ nav {
     flex-direction: column;
     gap: 4.8rem;
   }
-  .hero-text-box {
-    display: none;
-  }
+
   .cart-icon {
     right: 10%;
   }

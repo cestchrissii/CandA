@@ -105,12 +105,15 @@ nav {
 }
 
 .icon-mobile-nav {
-  height: 1rem;
-  width: 1.8rem;
+  height: 4.8 rem;
+  width: 4.8rem;
   color: #342949;
 }
 .icon-mobile-nav[name="close-outline"] {
   display: none;
+}
+.mobile-nav-btn {
+  padding: 0;
 }
 .section-hero-background {
   height: 100vh;

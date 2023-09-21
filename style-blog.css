@@ -83,12 +83,29 @@ p {
 }
 .blog-hero {
   background-image: url(blog/blog-background.png);
-  height: 50vh;
+  height: 100vh;
   margin: 0;
   background-size: cover;
   position: relative;
 }
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
 
+.icon-mobile-nav {
+  height: 4.8 rem;
+  width: 4.8rem;
+  color: #342949;
+}
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+.mobile-nav-btn {
+  padding: 0;
+}
 .blog-body {
   background-color: #c1d99d;
 }
@@ -367,12 +384,6 @@ p {
   display: flex;
   margin-top: auto;
 }
-.icon-mobile-nav {
-  border: none;
-  background: none;
-  cursor: pointer;
-  display: none;
-}
 /*
 //////////
 Queries
@@ -460,6 +471,10 @@ FOOTER
   .grid--footer {
     grid-template-columns: 1fr;
   }
+  .category-tags-list {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+  }
 }
 
 @media (max-width: 68.75em) {
@@ -486,10 +501,11 @@ FOOTER
   }
 }
 
-@media (max-width: 50em) {
+@media (max-width: 62.5em) {
   /* mobile navigation */
   .btn-mobile-nav {
-    display: block;
+    display: contents;
+    z-index: 1;
   }
 
   .main-nav {
@@ -504,7 +520,7 @@ FOOTER
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.5s;
+    transition: all 2s;
 
     /* hide navigation with transitions*/
     opacity: 0;
@@ -519,12 +535,11 @@ FOOTER
     transform: translateX(0);
   }
 
-  .close-outline {
+  .nav-open .icon-mobile-nav[name="close-outline"] {
     display: block;
-    align-self: flex-start;
+    z-index: 1;
   }
-
-  .menu-outline {
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
   }
 
@@ -532,9 +547,7 @@ FOOTER
     flex-direction: column;
     gap: 4.8rem;
   }
-  .hero-text-box {
-    display: none;
-  }
+
   .cart-icon {
     right: 10%;
   }
@@ -596,7 +609,17 @@ FOOTER
   border-radius: 5px;
   cursor: pointer;
 }
-
+.footer-button {
+  font-size: 2.4rem;
+  border-radius: 50px;
+  background: linear-gradient(3deg, #e8ca91 0%, #f8f5ce 50.52%, #e5c275 100%);
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  padding: 8px;
+}
 @media (max-width: 56.25em) {
   .social-links {
     gap: 2.4rem;
@@ -621,10 +644,5 @@ FOOTER
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 1.4rem;
-  }
-}
-@media (max-width: 31.25em) {
-  .grid--footer {
-    grid-template-columns: 1fr;
   }
 }

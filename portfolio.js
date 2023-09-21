@@ -12,3 +12,9 @@ function openSharePopup() {
   // Open a popup window with share options
   window.open(shareUrl, "_blank", "width=600,height=400");
 }
+const btnNav = document.querySelector(".btn-mobile-nav");
+const header = document.querySelector(".header");
+
+btnNav.addEventListener("click", function () {
+  header.classList.toggle("nav-open");
+});

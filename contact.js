@@ -25,6 +25,12 @@ function handleSubmit(event) {
 const newsletterCheckbox = document.getElementById("newsletter");
 const newsletterChecked = newsletterCheckbox.checked;
 
-// Add an event listener to the form
-const form = document.getElementById("myForm");
-form.addEventListener("submit", handleSubmit);
+const btnNav = document.querySelector(".btn-mobile-nav");
+const header = document.querySelector(".header");
+
+btnNav.addEventListener("click", function () {
+  header.classList.toggle("nav-open");
+});
+// // Add an event listener to the form
+// const form = document.getElementById("myForm");
+// form.addEventListener("submit", handleSubmit);

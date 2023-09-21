@@ -19,3 +19,9 @@ function showSlide(n) {
 function goBack() {
   window.history.back();
 }
+const btnNav = document.querySelector(".btn-mobile-nav");
+const header = document.querySelector(".header");
+
+btnNav.addEventListener("click", function () {
+  header.classList.toggle("nav-open");
+});

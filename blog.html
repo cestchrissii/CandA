@@ -35,17 +35,15 @@
     ></script>
 
     <title>C & A Branding & Graphic Designs</title>
-  </head>
+  </head><main>
   <body>
     <section class="blog-hero"><div class = "fairy-dust" id="fairy-dust"></div><div class = "fairy-dusts" id="fairy-dusts"></div>
       <header class="header nav-open">
         <img
           class="header-logo"
           alt="C & A Logo"
-          src="home-page/hero-section/main logo.png"
-        /><button class="btn-mobile-nav">
-          <img src="home-page/menu-outline.svg" class="icon-mobile-nav menu-outline" name="menu-outline">
-        <img src="home-page/close-outline.svg" class="icon-mobile-nav close-outline" name="close-outline"></button>
+          src="home-page/hero-section/main-logo.png"
+        >  
         <nav class="main-nav">
           <ul class="main-nav-list">
             <li>
@@ -66,31 +64,88 @@
                 href="contact.html"
                 >Start with Us</a>
             </li>
-          </ul>
+          </ul>   
         </nav>
-             <!-- Shopping Cart Icon -->
-             <div class="cart-icon" id="cart-icon">
-              <img src="home-page/shopping-cart-icon.png" alt="Shopping Cart">
-              <span class="cart-count" id="cart-count">0</span>
-            </div>
-                </header>
-                 <!-- Shopping Cart Overlay -->
-                 <div class="cart-overlay" id="cart-overlay">
-                  <!-- Content of the Shopping Cart goes here -->
-                  <div class="cart-content">
-                      <!-- Your cart items will go here -->
-                      <!-- Example: -->
-                      <div class="cart-item">
-                          <img src="product-image.jpg" alt="Product">
-                          <span class="item-name">Product Name</span>
-                          <span class="item-price">$9.99</span>
-                          <button class="remove-item">Remove</button>
-                          <a class="shopping-cart-link" href="shopping-cart.html">Continue</a>
+        <button class="btn-mobile-nav">
+          <img src="home-page/menu-outline.png" class="icon-mobile-nav" name="menu-outline">
+          <img src="home-page/close-outline.png" class="icon-mobile-nav" name="close-outline">
+        </button>
+          <!-- Shopping Cart Icon -->
+          <div class="cart-icon" id="cart-icon">
+            <img src="home-page/shopping-cart-icon.png" alt="Shopping Cart">
+            <span class="cart-count" id="cart-count">0</span>
+          </div>
+              
+               <!-- Shopping Cart Overlay -->
+               <cart-notification class="cart-overlay" id="cart-overlay">
+                <!-- Content of the Shopping Cart goes here -->
+                <div class="cart-content">
+                    <!-- Your cart items will go here -->
+                    <h1>My Shopping Cart</h1>
+  
+                    <div class="shopping-cart">
+                      <div class="product">
+                        <div>
+                          <img
+                            class="product-image"
+                            src="templates-page/main-img/floral-stationary.webp"
+                          />
+                        </div>
+                        <div class="product-details">
+                          <div class="product-title">
+                            Floral Small Business Stationery Bundle for Event & Wedding Planners
+                          </div>
+                        </div>
+                        <div class="product-price">9.99</div>
+                        <div class="product-quantity">
+                          <input type="number" value="2" min="1" />
+                        </div>
+                        <div class="product-removal">
+                          <button class="remove-product">Remove</button>
+                        </div>
+                        <div class="product-line-price">19.98</div>
                       </div>
-                  </div>
-                  <button class="close-cart" id="close-cart">Close</button>
-              </div>
-      <main>
+                
+                      <div class="product">
+                        <div>
+                          <img
+                            class="product-image"
+                            src="templates-page/main-img/minimal-stationary.webp"
+                          />
+                        </div>
+                        <div class="product-details">
+                          <div class="product-title">
+                            Professional Minimal Business Starter Kit Stationery Bundle
+                          </div>
+                        </div>
+                        <div class="product-price">9.99</div>
+                        <div class="product-quantity">
+                          <input type="number" value="1" min="1" />
+                        </div>
+                        <div class="product-removal">
+                          <button class="remove-product">Remove</button>
+                        </div>
+                        <div class="product-line-price">9.99</div>
+                      </div>
+                
+                      <div class="totals">
+                        <div class="totals-item">
+                          <label>Subtotal</label>
+                          <div class="totals-value" id="cart-subtotal">29.97</div>
+                        </div>
+                        <div class="totals-item totals-item-total">
+                          <label>Grand Total</label>
+                          <div class="totals-value" id="cart-total">29.97</div>
+                        </div>
+                      </div>
+                
+                      <button class="checkout">Checkout</button>
+                    </div>
+                </div>
+                <button class="close-cart" id="close-cart">Close</button>
+            </cart-notification>
+      </header>
+
         <div class="highlight-text-box">
           <h1 class="blog-heading-primary">
             Explore the Magical World of Business
@@ -107,7 +162,26 @@
 
       <h1 class="blog-header-text">BLOG</h1>
 
-        <section class="blog-highlight">
+
+
+      <section class="product-highlight blog-highlight">
+        <div class="product-highlight-grid blog-highlight-grid">
+          <div class="product-image">
+            <img src="blog/imgs/social.webp" alt="Social media usage and feedback" class="blog-highlight-img" />
+          </div>
+          <div class="product-info">
+            <h2 class="blog-secondary-head">Social Media Marketing Zero To Hero - How Small Business Can Thrive</h2>
+            <p class = "blog-highlight-para">
+              Social media has become integral for small and large businesses alike. It allows them to connect directly to their target audience allowing them to build their brands and drive business. 
+            </p>
+            <a href="" class="btn span-btn view-more-button">View Details</a>
+          </div>
+          </div>
+        </div>
+
+
+
+        <!-- <section class="blog-highlight">
           <div class="blog-highlight-grid">
             <div class="highlight-info"><h2 class="blog-secondary-head"> Social Media Marketing Zero To Hero - How Small Business Can Thrive</h2>
             <p class = "blog-highlight-para">
@@ -118,7 +192,7 @@
             src="blog/imgs/social.webp"
             class="blog-highlight-img"
             alt="Social media usuage and feedback">
-          </section>
+          </section> -->
 
 <div class="article-categories">
   <div class ="category-tags-list">
@@ -131,7 +205,7 @@
   </div>
 
 
-  <div class="article-listing blog-articles-grid">
+  <div class="blog-articles-grid">
     <div class="article"><a href="blog-article-page-colors.html">
       <img class="article-img" src="blog/imgs/colors.webp" alt="Rainbow colorful palette radial from center" /></a>
       <div class="article-details"><h3 class="article-title">How to Choose the Right Brand Colors- 5 Easy Steps</h3>
@@ -239,6 +313,7 @@
           </footer>
       </main>
       <script src="shopping-cart.js"></script>
+      <script src="blog.js"></script>
       <script src="shopping-cart-overlay.js"></script>
   </body>
 </html>

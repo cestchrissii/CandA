@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
       heroBackground.style.transition = "none";
       currentIndex = nextIndex;
-    }, 1000); // Adjust the duration to match the transition duration
+    }, 30000); // Adjust the duration to match the transition duration
 
     // Increment the index or reset it if it reaches the end
     currentIndex = (currentIndex + 1) % slideshowImages.length;

@@ -88,7 +88,24 @@ h1 {
   color: #b88dbb;
   font-size: 3.2rem;
 }
-
+.btn--form {
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding: 8px;
+  cursor: pointer;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 120px;
+  background: var(
+    --linear-light-golden,
+    linear-gradient(185deg, #e8ca91 0%, #f8f5ce 49.48%, #e8ca91 100%)
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+}
 nav {
   font-size: 20px;
   font-weight: 700;
@@ -438,7 +455,8 @@ nav a:link:last-child {
   margin-bottom: 48px;
 }
 
-.offer-button {
+.offer-button,
+.footer-button {
   font-size: 2.4rem;
   border-radius: 50px;
   background: linear-gradient(3deg, #e8ca91 0%, #f8f5ce 50.52%, #e5c275 100%);
@@ -447,6 +465,7 @@ nav a:link:last-child {
   align-items: center;
   flex-shrink: 0;
   cursor: pointer;
+  padding: 8px;
 }
 .offer-container grid grid--3-cols:nth(:last-child) {
   min-width: 40rem;
@@ -859,10 +878,6 @@ FOOTER
   .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
   }
-
-  /* .menu-outline {
-    display: none;
-  } */
 
   .main-nav-list {
     flex-direction: column;

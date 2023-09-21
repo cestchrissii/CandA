@@ -34,139 +34,115 @@
   </head>
   <body>      
    
-    <section class="templates-hero"> <section class="templates-hero-overlay"><div class = "fairy-dust" id="fairy-dust"></div><div class = "fairy-dusts" id="fairy-dusts"></div>
-    <header class="header nav-open">
-      <img
-        class="header-logo"
-        alt="C & A Logo"
-        src="home-page/hero-section/main logo.png"
-      /><button class="btn-mobile-nav">
-        <img src="home-page/menu-outline.svg" class="icon-mobile-nav menu-outline" name="menu-outline">
-        <img src="home-page/close-outline.svg" class="icon-mobile-nav close-outline" name="close-outline"></button>
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li>
-            <a class="main-nav-link" href="index.html">Home</a>
-          </li>
-          <li>
-            <a class="main-nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li>
-            <a class="main-nav-link" href="templates.html">Templates</a>
-          </li>
-          <li>
-            <a class="main-nav-link" href="blog.html">Blog</a>
-          </li>
-          <li>
-            <a
-              class="main-nav-link nav-cta"
-              href="contact.html"
-              >Start with Us</a>
-          </li>
-        </ul>
-      </nav>
-
-             <!-- Shopping Cart Icon -->
-             <div class="cart-icon" id="cart-icon">
-              <img src="home-page/shopping-cart-icon.png" alt="Shopping Cart"> 
-              <span class="cart-count" id="cart-count">0</span>
-              <a href="./shopping-cart.html">
-                Cart
-                <div class="total-items-in-cart">
-                    0
-                </div>
-            </a>
-
-
-            </div>
-                
-                 <!-- Shopping Cart Overlay -->
-                 <cart-notification class="cart-overlay" id="cart-overlay">
-                  <!-- Content of the Shopping Cart goes here -->
-                  <div class="cart-content">
-                      <!-- Your cart items will go here -->
-                      <h1>My Shopping Cart</h1>
-
-                      <!-- <div class="shopping-cart ">
-                        <div class="products cart-items"> -->
-
-                          <!-- <div>
-                            <img
-                              class="cart-product-image"
-                              src="templates-page/main-img/floral-stationary.webp"
-                            />
-                          </div>
-                          <div class="product-details">
-                            <div class="product-title">
-                              Floral Small Business Stationery Bundle for Event & Wedding Planners
-                            </div>
-                          </div>
-                          <div class="product-price">9.99</div>
-                          <div class="product-quantity">
-                            <input type="number" value="2" min="1" />
-                          </div>
-                          <div class="product-removal">
-                            <button class="remove-product">Remove</button>
-                          </div>
-                          <div class="product-line-price">19.98</div>
-                        </div> -->
-                  
-                        <!-- <div class="products cart-items">
-                          <div>
-                            <img
-                              class="cart-product-image"
-                              src="templates-page/main-img/minimal-stationary.webp"
-                            />
-                          </div>
-                          <div class="product-details">
-                            <div class="product-title">
-                              Professional Minimal Business Starter Kit Stationery Bundle
-                            </div>
-                          </div>
-                          <div class="product-price">9.99</div>
-                          <div class="product-quantity">
-                            <input type="number" value="1" min="1" />
-                          </div>
-                          <div class="product-removal">
-                            <button class="remove-product">Remove</button>
-                          </div>
-                          <div class="product-line-price">9.99</div>
-                        </div> -->
-                  
-                        <!-- <div class="cart-footer totals">
-                          <div class="totals-item">
-                            <label>Subtotal</label>
-                            <div class="totals-value" id="cart-subtotal" >19.98</div>
-                          </div>
-                          <div class="totals-item totals-item-total">
-                            <label>Grand Total</label>
-                            <div class="totals-value" id="cart-total">19.98</div>
+    <section class="templates-hero"> <div class = "fairy-dust" id="fairy-dust"></div><div class = "fairy-dusts" id="fairy-dusts"></div>
+      <header class="header nav-open">
+        <img
+          class="header-logo"
+          alt="C & A Logo"
+          src="home-page/hero-section/main-logo.png"
+        >  
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a class="main-nav-link" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="templates.html">Templates</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="blog.html">Blog</a>
+            </li>
+            <li>
+              <a
+                class="main-nav-link nav-cta"
+                href="contact.html"
+                >Start with Us</a>
+            </li>
+          </ul>   
+        </nav>
+        <button class="btn-mobile-nav">
+          <img src="home-page/menu-outline.png" class="icon-mobile-nav" name="menu-outline">
+          <img src="home-page/close-outline.png" class="icon-mobile-nav" name="close-outline">
+        </button>
+          <!-- Shopping Cart Icon -->
+          <div class="cart-icon" id="cart-icon">
+            <img src="home-page/shopping-cart-icon.png" alt="Shopping Cart">
+            <span class="cart-count" id="cart-count">0</span>
+          </div>
+              
+               <!-- Shopping Cart Overlay -->
+               <cart-notification class="cart-overlay" id="cart-overlay">
+                <!-- Content of the Shopping Cart goes here -->
+                <div class="cart-content">
+                    <!-- Your cart items will go here -->
+                    <h1>My Shopping Cart</h1>
+  
+                    <div class="shopping-cart">
+                      <div class="product product-items">
+                        <div>
+                          <img
+                            class="product-image"
+                            src="templates-page/main-img/floral-stationary.webp"
+                          />
+                        </div>
+                        <div class="product-details">
+                          <div class="product-title">
+                            Floral Small Business Stationery Bundle for Event & Wedding Planners
                           </div>
                         </div>
-                  
-                        <button class="checkout">Checkout</button>
+                        <div class="product-price">9.99</div>
+                        <div class="product-quantity">
+                          <input type="number" value="2" min="1" />
+                        </div>
+                        <div class="product-removal">
+                          <button class="remove-product">Remove</button>
+                        </div>
+                        <div class="product-line-price">19.98</div>
                       </div>
-                      <button class="close-cart" id="close-cart">Close</button>
-                  </div> -->
-                  <div class="cart">
-                    <div class="cart-items">
-                        <!-- render cart items here -->
-                    </div>
-                    <div class="cart-footer">
-                        <div class="subtotal">
-                            Subtotal (0 items): $0
+                
+                      <div class="product">
+                        <div>
+                          <img
+                            class="product-image"
+                            src="templates-page/main-img/minimal-stationary.webp"
+                          />
                         </div>
-                        <div class="checkout">
-                            Proceed to checkout
+                        <div class="product-details">
+                          <div class="product-title">
+                            Professional Minimal Business Starter Kit Stationery Bundle
+                          </div>
                         </div>
+                        <div class="product-price">9.99</div>
+                        <div class="product-quantity">
+                          <input type="number" value="1" min="1" />
+                        </div>
+                        <div class="product-removal">
+                          <button class="remove-product">Remove</button>
+                        </div>
+                        <div class="product-line-price">9.99</div>
+                      </div>
+                
+                      <div class="totals">
+                        <div class="totals-item">
+                          <label>Subtotal</label>
+                          <div class="totals-value" id="cart-subtotal">29.97</div>
+                        </div>
+                        <div class="totals-item totals-item-total">
+                          <label>Grand Total</label>
+                          <div class="totals-value" id="cart-total">29.97</div>
+                        </div>
+                      </div>
+                
+                      <button class="checkout">Checkout</button>
                     </div>
-                    <button class="close-cart" id="close-cart">Close</button>
                 </div>
-
-
-              </cart-notification>
-            
-            </header>
+                <button class="close-cart" id="close-cart">Close</button>
+            </cart-notification>
+      </header>
+      <main>
      <div class="templates-text-box">
             <h1 class="templates-heading-primary">
               Streamline Your 
@@ -178,15 +154,10 @@
             </h2>
           </div>
   </section>
-  </div>
-  </section>
-    <main>
+    
 
         <div class="swiper-container">
-
         </div>
-      </div>
-
       <section class="product-highlight">
         <div class="product-highlight-grid">
           <div class="product-image">
@@ -200,7 +171,7 @@
         </div>
       
       
-      <div class = "templates-articles-list template-product-grid product-items">
+      <div class = "templates-articles-list template-product-grid">
         <div class="templates-article-container"><a href="Floral-Stationary-Bundle-ecommerce-detail.html">
           <img src="templates-page/main-img/floral-stationary.webp" alt="floral stationary template" class="templates-article-main-img">
           <div class="hover-images">
@@ -321,7 +292,7 @@
             <h4 class="product-price">FREE</h4>
             <!-- <a href="#cta" class="btn btn--full margin-right-sm">BUY NOW</a> -->
             <section class="download-section">
-              <button id="downloadBtn" class="btn span-btn">Download Now</button>
+              <button id="downloadBtn" class="btn btn--full span-btn download">Download Now</button>
               <div id="emailOverlay" class="overlay hidden">
                 <div class="overlay-content">
                   <p>Enter your email to get the free download:</p>
@@ -341,7 +312,7 @@
             <h4 class="product-title">Free Minimal ATS Friendly CV Resume Template Word Google Docs</h4>
             <h4 class="product-price">FREE</h4>
             <section class="download-section">
-              <button id="downloadBtn" class="btn span-btn">Download Now</button>
+              <button id="downloadBtn" class="btn btn--full span-btn download">Download Now</button>
               <div id="emailOverlay" class="overlay hidden">
                 <div class="overlay-content">
                   <p>Enter your email to get the free download:</p>
