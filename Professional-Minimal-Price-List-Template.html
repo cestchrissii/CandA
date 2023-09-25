@@ -76,75 +76,41 @@
             <img src="home-page/shopping-cart-icon.png" alt="Shopping Cart">
             <span class="cart-count" id="cart-count">0</span>
           </div>
-              
-               <!-- Shopping Cart Overlay -->
-               <cart-notification class="cart-overlay" id="cart-overlay">
-                <!-- Content of the Shopping Cart goes here -->
-                <div class="cart-content">
-                    <!-- Your cart items will go here -->
-                    <h1>My Shopping Cart</h1>
-  
-                    <div class="shopping-cart">
-                      <div class="product">
-                        <div>
-                          <img
-                            class="product-image"
-                            src="templates-page/main-img/floral-stationary.webp"
-                          />
-                        </div>
-                        <div class="product-details">
-                          <div class="product-title">
-                            Floral Small Business Stationery Bundle for Event & Wedding Planners
-                          </div>
-                        </div>
-                        <div class="product-price">9.99</div>
-                        <div class="product-quantity">
-                          <input type="number" value="2" min="1" />
-                        </div>
-                        <div class="product-removal">
-                          <button class="remove-product">Remove</button>
-                        </div>
-                        <div class="product-line-price">19.98</div>
-                      </div>
-                
-                      <div class="product">
-                        <div>
-                          <img
-                            class="product-image"
-                            src="templates-page/main-img/minimal-stationary.webp"
-                          />
-                        </div>
-                        <div class="product-details">
-                          <div class="product-title">
-                            Professional Minimal Business Starter Kit Stationery Bundle
-                          </div>
-                        </div>
-                        <div class="product-price">9.99</div>
-                        <div class="product-quantity">
-                          <input type="number" value="1" min="1" />
-                        </div>
-                        <div class="product-removal">
-                          <button class="remove-product">Remove</button>
-                        </div>
-                        <div class="product-line-price">9.99</div>
-                      </div>
-                
-                      <div class="totals">
-                        <div class="totals-item">
-                          <label>Subtotal</label>
-                          <div class="totals-value" id="cart-subtotal">29.97</div>
-                        </div>
-                        <div class="totals-item totals-item-total">
-                          <label>Grand Total</label>
-                          <div class="totals-value" id="cart-total">29.97</div>
-                        </div>
-                      </div>
-                
-                      <button class="checkout">Checkout</button>
-                    </div>
+          
+          <!-- Shopping Cart Overlay -->
+          <cart-notification class="cart-overlay" id="cart-overlay">
+            <!-- Content of the Shopping Cart goes here -->
+            <div class="cart-content cart-items">
+              <!-- Your cart items will go here -->
+              <h1>My Shopping Cart</h1>
+          
+              <div class="shopping-cart">
+                <div class="cart-items product-items">
+                  <!-- Cart items will be rendered here by JavaScript -->
                 </div>
-                <button class="close-cart" id="close-cart">Close</button>
-            </cart-notification>
+          
+                <div class="product-removal">
+                  <img src="home-page/close-outline.png" class="remove-product" name="close-outline">
+                  <button class="remove-product">Remove</button>
+                </div>
+          
+                <div class="totals">
+                  <div class="total-items total-items-in-cart">
+                    <label>Subtotal</label>
+                    <div class="subtotal totals-value">0.00</div>
+                  </div>
+                  <div class="total-items total-items-total">
+                    <label>Grand Total</label>
+                    <div class="totals-value" id="cart-total">0.00</div>
+                  </div>
+                </div>
+          
+                <button class="checkout">Checkout</button>
+              </div>
+            </div>
+            <button class="close-cart" id="close-cart">Close</button>
+          </cart-notification>
+          
       </header>
   </section>
   <section class="ecommerce-detail-page">
@@ -276,8 +242,8 @@
               </select>
             </div>
 
-          <div class="button-container"> <span><a href="#cta" class="btn btn--full margin-right-sm" onclick="addToCart(this)">ADD TO CART</a></span> 
-            <span><a href="#cta" class="btn btn--full margin-right-sm" onclick="buyNow(this)">BUY NOW</a></span>
+          <div class="button-container"> <span><a href="#cta" class="btn btn--full margin-right-sm add-to-cart" onclick="addToCart(19)">ADD TO CART</a></span> 
+            <span><a href="shopping-cart.html" class="btn btn--full margin-right-sm buy-now" onclick="buyNow(19)">BUY NOW</a></span>
           </div>
     </div>
     
@@ -332,8 +298,8 @@
 <p><a class="footer-link" href="terms-and-conditions.html">Terms and Conditions</a></p>
   <p><a class="footer-link" href="privacy-policy.html">Privacy Policy</a></p></span>
      </main>
-     <script src="shopping-cart.js"></script>
-     <script src="shopping-cart-overlay.js"></script>
+     <script src="templates.js"></script>
+       <script src="add-to-cart-listing.js"></script>  
      <script src="listing-page.js"></script>
      </body>
 </html>

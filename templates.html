@@ -67,21 +67,21 @@
           <img src="home-page/menu-outline.png" class="icon-mobile-nav" name="menu-outline">
           <img src="home-page/close-outline.png" class="icon-mobile-nav" name="close-outline">
         </button>
-          <!-- Shopping Cart Icon -->
+          <!-- Shopping Cart Icon
           <div class="cart-icon" id="cart-icon">
             <img src="home-page/shopping-cart-icon.png" alt="Shopping Cart">
             <span class="cart-count" id="cart-count">0</span>
           </div>
               
-               <!-- Shopping Cart Overlay -->
-               <cart-notification class="cart-overlay" id="cart-overlay">
-                <!-- Content of the Shopping Cart goes here -->
-                <div class="cart-content">
-                    <!-- Your cart items will go here -->
-                    <h1>My Shopping Cart</h1>
+                Shopping Cart Overlay -->
+               <!--<cart-notification class="cart-overlay" id="cart-overlay">
+                 Content of the Shopping Cart goes here -->
+                <!--<div class="cart-content cart-items">
+                     Your cart items will go here -->
+                    <!--<h1>My Shopping Cart</h1>
   
                     <div class="shopping-cart">
-                      <div class="product product-items">
+                      <div class="product-items">
                         <div>
                           <img
                             class="product-image"
@@ -104,7 +104,6 @@
                       </div>
                 
                       <div class="product">
-                        <div>
                           <img
                             class="product-image"
                             src="templates-page/main-img/minimal-stationary.webp"
@@ -128,7 +127,7 @@
                       <div class="totals">
                         <div class="totals-item">
                           <label>Subtotal</label>
-                          <div class="totals-value" id="cart-subtotal">29.97</div>
+                          <div class="totals-value subtotal" id="cart-subtotal ">29.97</div>
                         </div>
                         <div class="totals-item totals-item-total">
                           <label>Grand Total</label>
@@ -140,7 +139,46 @@
                     </div>
                 </div>
                 <button class="close-cart" id="close-cart">Close</button>
-            </cart-notification>
+            </cart-notification> --><!-- Shopping Cart Icon -->
+<div class="cart-icon" id="cart-icon">
+  <img src="home-page/shopping-cart-icon.png" alt="Shopping Cart">
+  <span class="cart-count" id="cart-count">0</span>
+</div>
+
+<!-- Shopping Cart Overlay -->
+<cart-notification class="cart-overlay" id="cart-overlay">
+  <!-- Content of the Shopping Cart goes here -->
+  <div class="cart-content cart-items">
+    <!-- Your cart items will go here -->
+    <h1>My Shopping Cart</h1>
+
+    <div class="shopping-cart">
+      <div class="cart-items product-items">
+        <!-- Cart items will be rendered here by JavaScript -->
+      </div>
+
+      <div class="product-removal">
+        <img src="home-page/close-outline.png" class="remove-product" name="close-outline">
+        <button class="remove-product">Remove</button>
+      </div>
+
+      <div class="totals">
+        <div class="total-items total-items-in-cart">
+          <label>Subtotal</label>
+          <div class="subtotal totals-value">0.00</div>
+        </div>
+        <div class="total-items total-items-total">
+          <label>Grand Total</label>
+          <div class="totals-value" id="cart-total">0.00</div>
+        </div>
+      </div>
+
+      <button class="checkout">Checkout</button>
+    </div>
+  </div>
+  <button class="close-cart" id="close-cart">Close</button>
+</cart-notification>
+
       </header>
       <main>
      <div class="templates-text-box">
@@ -171,7 +209,7 @@
         </div>
       
       
-      <div class = "templates-articles-list template-product-grid">
+      <div class = "templates-articles-list template-product-grid ">
         <div class="templates-article-container"><a href="Floral-Stationary-Bundle-ecommerce-detail.html">
           <img src="templates-page/main-img/floral-stationary.webp" alt="floral stationary template" class="templates-article-main-img">
           <div class="hover-images">
@@ -181,8 +219,8 @@
           <div class="product-information">
             <h4 class="product-title">Floral Small Business Stationery Bundle for Event & Wedding Planners</h4>
             <h4 class="product-price">$9.99</h4>
-            <a href="#cta" class="btn btn--full margin-right-sm span-btn add-to-cart" onclick="addToCart(item1)">ADD TO CART</a>
-            <a href="#cta" class="btn btn--full margin-right-sm span-btn buy-now " onclick="buyNow(item1)">BUY NOW</a>
+            <a class="btn btn--full margin-right-sm span-btn add-to-cart" onclick="addToCart(0)">ADD TO CART</a>
+            <a href="shopping-cart.html" class="btn btn--full margin-right-sm span-btn buy-now " onclick="buyNow(0)">BUY NOW</a>
           </div>
         </div>
         <div class="templates-article-container"><a href="Professional-Minimal-Sationary-Bundle.html">
@@ -191,11 +229,11 @@
             <img src="templates-page/hover-img/minimal-stationary-2.webp" alt="minimal stationary template" class="hover-image"></a>
             <!-- Add more hover images here -->
           </div>
-          <div class="product-information">
+          <div class="product">
             <h4 class="product-title">Professional Minimal Business Starter Kit Stationery Bundle</h4>
             <h4 class="product-price">$9.99</h4>
-            <a href="#cta" class="btn btn--full margin-right-sm span-btn add-to-cart"onclick="addToCart(item2)">ADD TO CART</a>
-            <a href="#cta" class="btn btn--full margin-right-sm span-btn buy-now"onclick="buyNow(item2)" >BUY NOW</a>
+            <a  class="btn btn--full margin-right-sm span-btn add-to-cart"onclick="addToCart(1)">ADD TO CART</a>
+            <a href="shopping-cart.html" class="btn btn--full margin-right-sm span-btn buy-now"onclick="buyNow(1)" >BUY NOW</a>
           </div>
         </div>
         <div class="templates-article-container"><a href="Pastel-Rainbow-Stationary-Bundle-ecommerce-detail.html">
@@ -203,11 +241,11 @@
           <div class="hover-images">
             <img src="templates-page/hover-img/holographic-stationary-2.webp" alt="holographic template printed" class="hover-image"></a>
           </div>
-          <div class="product-information">
+          <div class="product">
             <h4 class="product-title">Pastel Rainbow Small Business Stationery Bundle Starter Kit</h4>
             <h4 class="product-price">$9.99</h4>
-            <a href="#cta" class="btn btn--full margin-right-sm span-btn add-to-cart"onclick="addToCart(item3)">ADD TO CART</a>
-            <a href="#cta" class="btn btn--full margin-right-sm span-btn buy-now"onclick="buyNow(item3)">BUY NOW</a>
+            <a  class="btn btn--full margin-right-sm span-btn add-to-cart"onclick="addToCart(2)">ADD TO CART</a>
+            <a href="shopping-cart.html" class="btn btn--full margin-right-sm span-btn buy-now"onclick="buyNow(2)">BUY NOW</a>
           </div>
         </div>
         <div class="templates-article-container"><a href="Creative-Rainbow-Stationary-Bundle-ecommerce-detail.html">
@@ -215,11 +253,11 @@
           <div class="hover-images">
             <img src="templates-page/hover-img/rainbow-stationary-2.webp" alt="rainbow template printed" class="hover-image"></a>
           </div>
-          <div class="product-information">
+          <div class="product">
             <h4 class="product-title">Creative Rainbow Business Starter Kit Stationery Bundle</h4>
             <h4 class="product-price">$9.99</h4>
-            <a href="#cta" class="btn btn--full margin-right-sm span-btn add-to-cart" onclick="addToCart(item4)">ADD TO CART</a>
-            <a href="#cta" class="btn btn--full margin-right-sm span-btn buy-now" onclick="buyNow(item4)">BUY NOW</a>
+            <a  class="btn btn--full margin-right-sm span-btn add-to-cart" onclick="addToCart(3)">ADD TO CART</a>
+            <a href="shopping-cart.html" class="btn btn--full margin-right-sm span-btn buy-now" onclick="buyNow(3)">BUY NOW</a>
           </div>
         </div>
         <div class="templates-article-container"><a href="Animal-Coloring-Pages-for-Adults.html">
@@ -227,11 +265,11 @@
           <div class="hover-images">
             <img src="templates-page/hover-img/page-printing.webp" alt="ABC Alphabet Animal coloring book" class="hover-image"></a>
           </div>
-          <div class="product-information">
+          <div class="product">
             <h4 class="product-title">Printable Woodland Animals Adult Coloring Book</h4>
             <h4 class="product-price">$13.49</h4>
-            <a href="#cta" class="btn btn--full margin-right-sm span-btn add-to-cart" onclick="addToCart(item5)">ADD TO CART</a>
-            <a href="#cta" class="btn btn--full margin-right-sm span-btn buy-now" onclick="buyNow(item5)">BUY NOW</a>
+            <a class="btn btn--full margin-right-sm span-btn add-to-cart" onclick="addToCart(4)">ADD TO CART</a>
+            <a href="shopping-cart.html" class="btn btn--full margin-right-sm span-btn buy-now" onclick="buyNow(4)">BUY NOW</a>
           </div>
         </div>
         <div class="templates-article-container"><a href="ABC-Animal-Woodland-Coloring-Book-for-Kids.html">
@@ -239,11 +277,11 @@
           <div class="hover-images">
             <img src="templates-page/hover-img/tree-coloring-book-2.webp" alt="Animal Coloring Pages" class="hover-image"></a>
           </div>
-          <div class="product-information">
+          <div class="product">
             <h4 class="product-title">ABC Alphabet Animal Coloring Pages for Kids </h4>
             <h4 class="product-price">$13.49</h4>
-            <a href="#cta" class="btn btn--full margin-right-sm span-btn add-to-cart" onclick="addToCart(item6)">ADD TO CART</a>
-            <a href="#cta" class="btn btn--full margin-right-sm span-btn buy-now" onclick="buyNow(item6)">BUY NOW</a>
+            <a class="btn btn--full margin-right-sm span-btn add-to-cart" onclick="addToCart(5)">ADD TO CART</a>
+            <a href="shopping-cart.html" class="btn btn--full margin-right-sm span-btn buy-now" onclick="buyNow(5)">BUY NOW</a>
           </div>
         </div>
         <div class="templates-article-container"><a href="SW-Black-Resume-Template.html">
@@ -251,11 +289,11 @@
           <div class="hover-images">
             <img src="templates-page/hover-img/sw-resume-2.webp" alt="sw modern resume template" class="hover-image"></a>
           </div>
-          <div class="product-information">
+          <div class="product">
             <h4 class="product-title">Printable Modern Resume CV Template Word Google Docs</h4>
             <h4 class="product-price">$2.50</h4>
-            <a href="#cta" class="btn btn--full margin-right-sm span-btn add-to-cart" onclick="addToCart(item7)">ADD TO CART</a>
-            <a href="#cta" class="btn btn--full margin-right-sm span-btn buy-now" onclick="buyNow(item7)">BUY NOW</a>
+            <a class="btn btn--full margin-right-sm span-btn add-to-cart" onclick="addToCart(6)">ADD TO CART</a>
+            <a href="shopping-cart.html" class="btn btn--full margin-right-sm span-btn buy-now" onclick="buyNow(6)">BUY NOW</a>
           </div>
         </div>
         <div class="templates-article-container"><a href="TS-Black-Resume-Template.html">
@@ -263,11 +301,11 @@
           <div class="hover-images">
             <img src="templates-page/hover-img/ts-resume-hover.webp" alt="ts modern resume template" class="hover-image"></a>
           </div>
-          <div class="product-information">
+          <div class="product">
             <h4 class="product-title">Editable Executive CV Resume Template Word Google Docs</h4>
             <h4 class="product-price">$2.50</h4>
-            <a href="#cta" class="btn btn--full margin-right-sm span-btn add-to-cart" onclick="addToCart(item8)">ADD TO CART</a>
-            <a href="#cta" class="btn btn--full margin-right-sm span-btn buy-now" onclick="buyNow(item8)">BUY NOW</a>
+            <a class="btn btn--full margin-right-sm span-btn add-to-cart" onclick="addToCart(7)">ADD TO CART</a>
+            <a href="shopping-cart.html" class="btn btn--full margin-right-sm span-btn buy-now" onclick="buyNow(7)">BUY NOW</a>
           </div>
         </div>
         <div class="templates-article-container"><a href="KR-Black-Resume-Template.html">
@@ -275,11 +313,11 @@
           <div class="hover-images">
             <img src="templates-page/hover-img/kr-resume-hover.webp" alt="kr modern resume template" class="hover-image"></a>
           </div>
-          <div class="product-information">
+          <div class="product">
             <h4 class="product-title">Printable Minimal Resume CV Template Word Google Docs</h4>
             <h4 class="product-price">$2.50</h4>
-            <a href="#cta" class="btn btn--full margin-right-sm span-btn add-to-cart" onclick="addToCart(item9)">ADD TO CART</a>
-            <a href="#cta" class="btn btn--full margin-right-sm span-btn buy-now" onclick="buyNow(item9)">BUY NOW</a>
+            <a class="btn btn--full margin-right-sm span-btn add-to-cart" onclick="addToCart(8)">ADD TO CART</a>
+            <a href="shopping-cart.html" class="btn btn--full margin-right-sm span-btn buy-now" onclick="buyNow(8)">BUY NOW</a>
           </div>
         </div>
         <div class="templates-article-container"><a href="FREE-unique-business-cards.html">
@@ -371,14 +409,8 @@
     <p><a class="footer-link" href="terms-and-conditions.html">Terms and Conditions</a></p>
     <p><a class="footer-link" href="privacy-policy.html">Privacy Policy</a></p></span>
        </main>
-<!-- <script src="add-to-cart-templates.js"></script> -->
        <script src="templates.js"></script>
-       <!-- <script src="shopping-cart.js"></script>
-       <script src="shopping-cart-overlay.js"></script> -->
-
-       <script src="add-to-cart-listing.js"></script>
-       <!-- <script src="add-to-cart-templates.js"></script> -->
-       
+       <script src="add-to-cart-listing.js"></script>     
        </body>
   </html>
   

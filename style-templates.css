@@ -37,6 +37,7 @@ body {
   flex: 1 1 0;
   border-radius: 16px 16px 0 0;
 }
+.product,
 .product-information {
   max-width: 70em;
   align-self: center;
@@ -50,11 +51,12 @@ body {
   gap: 32px;
   display: flex;
 }
-.product-title {
+.product-title,
+.item-info h4 {
   align-self: stretch;
   flex: 1 1 0;
   color: #342949;
-  font-size: 84px;
+  font-size: 3.2rem;
   font-family: Montserrat;
   font-weight: 700;
   word-wrap: break-word;
@@ -70,11 +72,12 @@ body {
   word-wrap: break-word;
 }
 
-.product-price {
+.product-price,
+.unit-price {
   align-self: stretch;
   flex: 1 1 0;
   color: #342949;
-  font-size: 4.2rem;
+  font-size: 2.8rem;
   font-family: Montserrat;
   font-weight: 800;
   text-decoration: underline;
@@ -540,10 +543,18 @@ body {
   float: left;
   width: 12%;
 }
-.overlay-product-quantity {
-  float: left;
+.number {
   width: 10%;
+  font-weight: 700;
 }
+.units {
+  display: inline-flex;
+  gap: 16px;
+  padding-top: 16px;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
 .product-removal {
   float: left;
   width: 9%;
@@ -570,16 +581,16 @@ body {
 /* Apply clearfix in a few places */
 .shopping-cart-overlay::after,
 .column-labels::after,
-.overlay-product::after,
-.totals-item::after {
+.cart-item::after,
+.total-items::after {
   content: "";
   display: table;
   clear: both;
 }
 
 /* Apply dollar signs */
-.overlay-product .overlay-product-price:before,
-.overlay-product .product-line-price:before,
+.cart-item .overlay-product-price:before,
+.cart-item .product-line-price:before,
 .totals-value:before {
   content: "$";
 }
@@ -597,7 +608,7 @@ label {
 }
 
 /* Product entries */
-.overlay-product {
+.cart-item {
   display: inline-block;
   margin-bottom: 16px;
   width: auto;
@@ -652,7 +663,7 @@ label {
 
 /* Totals section */
 .totals {
-  .totals-item {
+  .total-items {
     float: right;
     clear: both;
     width: 100%;
@@ -672,7 +683,7 @@ label {
     }
   }
 
-  .totals-item-total {
+  .total-items-total {
     font-size: 3.2rem;
     font-weight: 700;
     color: #7b8d54;
@@ -762,7 +773,7 @@ label {
   }
 
   .totals {
-    .totals-item {
+    .total-items {
       label {
         width: 60%;
       }
@@ -773,7 +784,8 @@ label {
     }
   }
 }
-.download {
+.download,
+.add-to-cart {
   font-size: 1.6rem;
   font-weight: 600;
   background: linear-gradient(3deg, #e8ca91 0%, #f8f5ce 50.52%, #e5c275 100%);
@@ -908,6 +920,11 @@ Queries
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   border-radius: 16px;
+}
+
+.item-info img {
+  max-width: 45%;
+  height: auto;
 }
 
 input {
