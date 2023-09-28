@@ -134,7 +134,7 @@ nav {
 
 .section-hero-background {
   height: 100vh;
-  background-image: url(home-page/hero-section/slideshow-1/slider-photo-1.png);
+  background-image: url(home-page/hero-section/slideshow-1/slider-photo-1.webp);
   background-size: cover;
   padding: 0;
 }
@@ -202,7 +202,7 @@ nav {
 .portfolio-hero-overlay {
   height: 100vh;
   margin: 0;
-  background-image: url(home-page/portfolio/hero\ background.png);
+  background-image: url(home-page/portfolio/hero-background.webp);
   background-size: cover;
 }
 
@@ -569,7 +569,6 @@ nav a:link:last-child {
 .cta {
   display: grid;
   grid-template-columns: 2fr, 1fr;
-  /* background-image: url(home-page/cta.png); */
   overflow: hidden;
   padding: 3.2rem 3.2rem;
 }

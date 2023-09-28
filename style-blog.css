@@ -82,7 +82,7 @@ p {
   }
 }
 .blog-hero {
-  background-image: url(blog/blog-background.png);
+  background-image: url(blog/blog-background.webp);
   height: 100vh;
   margin: 0;
   background-size: cover;

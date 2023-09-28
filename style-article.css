@@ -348,21 +348,21 @@ ul {
 }
 
 .first-img-section {
-  background-image: url(blog/colors-blog/first-sec.png);
+  background-image: url(blog/colors-blog/first-sec.webp);
   border-radius: 16px;
   height: 617px;
   width: 100%;
 }
 
 .second-img-section {
-  background-image: url(blog/colors-blog/second-sec.png);
+  background-image: url(blog/colors-blog/second-sec.webp);
   border-radius: 16px;
   height: 617px;
   width: 100%;
 }
 
 .third-img-section {
-  background-image: url(blog/colors-blog/third-sec.png);
+  background-image: url(blog/colors-blog/third-sec.webp);
   border-radius: 16px;
   height: 617px;
   width: 100%;
