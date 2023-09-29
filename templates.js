@@ -742,3 +742,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Set an interval to periodically highlight products
   setInterval(highlightProduct, intervalTime);
 });
+
+var client = ShopifyBuy.buildClient({
+  domain: "thisiscanda.myshopify.com",
+  storefrontAccessToken: "fe68251fab787c99f3e14494d10c403c",
+});
+
+var ui = ShopifyBuy.UI.init(client);
