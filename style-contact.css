@@ -153,8 +153,8 @@ h1 {
 }
 
 .icon-mobile-nav {
-  height: 4.8 rem;
-  width: 4.8rem;
+  height: auto;
+  width: 2.4rem;
   color: #342949;
 }
 .icon-mobile-nav[name="close-outline"] {
