@@ -88,6 +88,11 @@ ul {
   line-height: normal;
 }
 
+.color-title,
+.color-description {
+  color: #b88dbb;
+}
+
 .back-button {
   color: #342949;
   font-family: Montserrat;

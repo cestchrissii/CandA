@@ -73,45 +73,7 @@
               <img src="home-page/menu-outline.png" class="icon-mobile-nav" name="menu-outline">
               <img src="home-page/close-outline.png" class="icon-mobile-nav" name="close-outline">
             </button>
-              <!-- Shopping Cart Icon -->
-              <div class="cart-icon" id="cart-icon">
-                <img src="home-page/shopping-cart-icon.png" alt="Shopping Cart">
-                <span class="cart-count" id="cart-count">0</span>
-              </div>
-              
-              <!-- Shopping Cart Overlay -->
-              <cart-notification class="cart-overlay" id="cart-overlay">
-                <!-- Content of the Shopping Cart goes here -->
-                <div class="cart-content cart-items">
-                  <!-- Your cart items will go here -->
-                  <h1>My Shopping Cart</h1>
-              
-                  <div class="shopping-cart">
-                    <div class="cart-items product-items">
-                      <!-- Cart items will be rendered here by JavaScript -->
-                    </div>
-              
-                    <div class="product-removal">
-                      <img src="home-page/close-outline.png" class="remove-product" name="close-outline">
-                      <button class="remove-product">Remove</button>
-                    </div>
-              
-                    <div class="totals">
-                      <div class="total-items total-items-in-cart">
-                        <label>Subtotal</label>
-                        <div class="subtotal totals-value">0.00</div>
-                      </div>
-                      <div class="total-items total-items-total">
-                        <label>Grand Total</label>
-                        <div class="totals-value" id="cart-total">0.00</div>
-                      </div>
-                    </div>
-              
-                    <button class="checkout">Checkout</button>
-                  </div>
-                </div>
-                <button class="close-cart" id="close-cart">Close</button>
-              </cart-notification>
+             
               
           </header>
               </div>
@@ -128,7 +90,7 @@
           </div>
         </section>
 
-            <div class="start-project">
+            <div class="start-project" id="contact-form">
               <h1 class="start-header-text">START A PROJECT</h1>
               <div class="cta-form" > 
                 <div class="input-field">
@@ -138,23 +100,23 @@
                 <label for = "email">Email Address</label>
               <input id="email" type="email" placeholder="me@example.com" name="email" required></div>
                <div class="input-field"> 
-              <label for = "organization-name">Organization Name</label>
-                <input id="organization-name" type="text" placeholder="John Smith Inc." name="organization-name" required></div>
+              <label for = "organization">Organization Name</label>
+                <input id="organization" type="text" placeholder="John Smith Inc." name="organization" required></div>
               <div class="input-field">
                 <label for = "budget">Budget</label>
               <input id="budget" type="number" placeholder="$Least - $Maximum" name="budget" required></div>
               <div class="input-field">
-              <label for = "project-details">Tell Us A Bit About Your Project</label>
-                <input id="project-details" type="text" placeholder="Tell Us A Bit About Your Project" name="project-details" required></div>
+              <label for = "project-description">Tell Us A Bit About Your Project</label>
+                <input id="project-description" type="text" placeholder="Tell Us A Bit About Your Project" name="project-description" required></div>
               <div class="input-field">
                 <label for = "timeline">Timeline</label>
               <input id="timeline" type="text" placeholder="Timeline" name="timeline" required></div>
               <div class="input-field-subscribe">
-                <label class="check-box">
+                <label for="newsletter" class="check-box">
                   <input type="checkbox" id="newsletter" name="newsletter" value="yes" class="checkbox"> </label><h2 class="check-text">Join Our Creative Collective & never miss a beat! Subscribe to our newsletter now.</h2>
                   
                 </div>
-              <button class="btn btn--form" input type="submit" value="Submit">Submit</button>
+              <button type="submit" class="btn btn--form">Submit</button>
               </div>
             </div>
 
@@ -318,8 +280,7 @@
         </div>
       </div>
     </section>
-    <script src="shopping-cart.js"></script>
-    <script src="shopping-cart-overlay.js"></script>
+    
     <script src="contact.js"></script>
   </body>
 </html>

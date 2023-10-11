@@ -1,36 +1,72 @@
-// JavaScript function to handle form submission
-function handleSubmit(event) {
-  event.preventDefault(); // Prevents the default form submission behavior
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  // Get the value from the name input field
-  const name = document.getElementById("full-name").value;
-  const email = document.getElementById("email").value;
-  const organizationName = document.getElementById("organization-name").value;
-  const budget = document.getElementById("budget").value;
-  const projectDetails = document.getElementById("project-details").value;
-  const timeline = document.getElementById("timeline").value;
+    const fullName = document.getElementById("full-name").value;
+    const email = document.getElementById("email").value;
+    const organization = document.getElementById("organization").value;
+    const budget = document.getElementById("budget").value;
+    const timeline = document.getElementById("timeline").value;
+    const projectDescription = document.getElementById(
+      "project-description"
+    ).value;
+    const newsletter = document.getElementById("newsletter").checked;
 
-  // You can perform additional actions here, such as form validation or sending data to a server
+    // Prepare the data to send to Shopify Admin API
+    const data = {
+      customer: {
+        first_name: fullName,
+        email: email,
+        company: organization,
+      },
+      metafields: [
+        {
+          namespace: "contact_form",
+          key: "budget",
+          value: budget,
+        },
+        {
+          namespace: "contact_form",
+          key: "timeline",
+          value: timeline,
+        },
+        {
+          namespace: "contact_form",
+          key: "project_description",
+          value: projectDescription,
+        },
+        {
+          namespace: "contact_form",
+          key: "newsletter_subscription",
+          value: newsletter ? "subscribed" : "not_subscribed",
+        },
+      ],
+    };
 
-  // For this example, we'll just display an alert
-  //   alert(`Hello, ${name}! Form submitted successfully.`);
-  // }
+    // Define your Shopify API URL and access token
+    const apiUrl =
+      "https://thisiscanda.myshopify.com/admin/api/2021-07/customers.json";
+    const accessToken = "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";
 
-  alert(
-    `Name: ${name}\nEmail: ${email}\nTimeline: ${timeline}\nBudget: ${budget}\nProject Details: ${projectDetails}\nOrganization Name: ${organizationName}\nForm submitted successfully.`
-  );
-}
-
-// Check if the newsletter checkbox is checked
-const newsletterCheckbox = document.getElementById("newsletter");
-const newsletterChecked = newsletterCheckbox.checked;
-
-const btnNav = document.querySelector(".btn-mobile-nav");
-const header = document.querySelector(".header");
-
-btnNav.addEventListener("click", function () {
-  header.classList.toggle("nav-open");
+    // Use a fetch request to send the data to Shopify Admin API
+    fetch(apiUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Shopify-Access-Token": accessToken,
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => {
+        if (response.ok) {
+          alert("Your information has been submitted. Thank you!");
+        } else {
+          alert("There was an error submitting your information.");
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  });
 });
-// // Add an event listener to the form
-// const form = document.getElementById("myForm");
-// form.addEventListener("submit", handleSubmit);

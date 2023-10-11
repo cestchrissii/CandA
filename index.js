@@ -65,47 +65,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Get references to the cart icon, overlay, and cart count element
-  var cartIcon = document.getElementById("cart-icon");
-  const cartOverlay = document.getElementById("cart-overlay");
-  const closeCartButton = document.getElementById("close-cart");
-  const cartCountElement = document.getElementById("cart-count"); // New
-
-  let cartCount = 0; // New variable to keep track of the cart count
-
-  // Function to update the cart count displayed to the user
-  function updateCartCount() {
-    cartCountElement.textContent = cartCount;
-  }
-
-  // Add a click event listener to the cart icon
-  cartIcon.addEventListener("click", () => {
-    // Display the cart overlay when the icon is clicked
-    cartOverlay.style.display = "flex";
-  });
-
-  // Add a click event listener to the close cart button
-  closeCartButton.addEventListener("click", () => {
-    // Hide the cart overlay when the close button is clicked
-    cartOverlay.style.display = "none";
-  });
-
-  // Example: Increase the cart count (you can call this when adding a product to the cart)
-  function addToCart() {
-    cartCount++;
-    updateCartCount();
-  }
-
-  // Example: Decrease the cart count (you can call this when removing a product from the cart)
-  function removeFromCart() {
-    if (cartCount > 0) {
-      cartCount--;
-      updateCartCount();
-    }
-  }
-
   // Call updateCartCount initially to set the count to 0
-  updateCartCount();
+  // updateCartCount();
 
   document.addEventListener("DOMContentLoaded", function () {
     const subscribeForm = document.getElementById("subscribe-form");
@@ -356,3 +317,77 @@ function checkFlexGap() {
 checkFlexGap();
 
 //https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("newsletter-form");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+
+    if (!name || !email) {
+      alert("Please fill in both name and email fields.");
+      return;
+    }
+
+    // Replace this with your Shopify Storefront API endpoint for creating customers.
+    const apiEndpoint =
+      "https://thisiscanda.myshopify.com/api/2021-07/graphql.json";
+    const accessToken = "fe68251fab787c99f3e14494d10c403c";
+
+    // Construct the GraphQL query to create a customer.
+    const graphqlQuery = `
+          mutation {
+              customerCreate(input: {
+                  firstName: "${name}",
+                  email: "${email}",
+                  password: "temp-password"  # You can set a temporary password
+              }) {
+                  customer {
+                      id
+                  }
+                  userErrors {
+                      field
+                      message
+                  }
+              }
+          }
+      `;
+
+    fetch(apiEndpoint, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Shopify-Storefront-Access-Token": accessToken,
+      },
+      body: JSON.stringify({ query: graphqlQuery }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.data.customerCreate.customer) {
+          alert("Subscription successful!");
+          // You can redirect or perform other actions here.
+        } else if (data.data.customerCreate.userErrors.length > 0) {
+          const errorMessages = data.data.customerCreate.userErrors
+            .map((error) => error.message)
+            .join("\n");
+          alert(`Subscription failed. Errors:\n${errorMessages}`);
+        } else {
+          alert("Subscription failed. Please try again later.");
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("An error occurred. Please try again later.");
+      });
+
+    // Clear input fields after submission
+    nameInput.value = "";
+    emailInput.value = "";
+  });
+});

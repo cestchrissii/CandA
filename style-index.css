@@ -224,8 +224,10 @@ nav {
   margin-bottom: 9.6rem;
 }
 .hero-description {
+  color: #342949;
   font-size: 2rem;
-  line-height: 1.5;
+  font-weight: 700;
+  line-height: 2;
   margin-bottom: 4.8rem;
 }
 h1 {
