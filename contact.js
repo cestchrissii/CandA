@@ -149,7 +149,8 @@ document
       success: function () {
         alert("Your information has been submitted. Thank you!");
       },
-      error: function () {
+      error: function (xhr, status, error) {
+        console.error("Error:", error);
         alert("There was an error submitting your information.");
       },
     });
