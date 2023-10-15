@@ -107,6 +107,9 @@
         </cart-notification> -->
         
     </header>
+
+    
+
     <main>
     
                       <div class="hero-text-box">
@@ -288,13 +291,16 @@
         <div class="cta-text-box cta-container" id="newsletter-form">
           <h2 class="heading-secondary">Get insider access with our monthly newsletter</h2>
         </div>
-        <div class="cta-form subscription-form" id="subscribe-form" > 
+        <form class="cta-form subscription-form" id="subscribe-form" action="/submit" method="post"> 
+
         <label for = "full-name">Full Name</label>
         <input id="full-name" type="text" placeholder="John Smith" name="full-name" required>
         <label for = "email">Email Address</label>
-      <input id="email" type="email" placeholder="me@example.com" name="email" required>
-        <button class="btn btn--form" type="submit">Subscribe</button>
-      </div>
+      <input id="email" type="email" placeholder="me@example.com" name="email" required> 
+         <button class="btn btn--form" type="submit">Subscribe</button>
+       
+         
+        </form>
     </div>
          <footer class=" grid--footer grid--4--cols">
           <div class="logos">
