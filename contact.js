@@ -134,8 +134,7 @@ document
       ],
     };
     // Define your Shopify API URL and access token
-    const apiUrl =
-      "https://thisiscanda.myshopify.com/admin/api/2021-07/customers.json"; // Replace with your Shopify store URL
+    const apiUrl = "https://thisiscanda.myshopify.com/admin/api"; // Replace with your Shopify store URL
     const accessToken = "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"; // Replace with your Shopify access token
 
     $.ajax({
