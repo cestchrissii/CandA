@@ -136,7 +136,7 @@ document
     // Define your Shopify API URL and access token
     const apiUrl =
       "https://thisiscanda.myshopify.com/admin/api/2023-07/customers.json"; // Replace with your Shopify store URL
-    const accessToken = "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";
+    const accessToken = "fe68251fab787c99f3e14494d10c403c";
 
     $.ajax({
       url: apiUrl,
@@ -149,8 +149,7 @@ document
       success: function () {
         alert("Your information has been submitted. Thank you!");
       },
-      error: function (xhr, status, error) {
-        console.error("Error:", error);
+      error: function () {
         alert("There was an error submitting your information.");
       },
     });
