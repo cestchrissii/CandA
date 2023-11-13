@@ -103,47 +103,50 @@ document
     const data = {
       customer: {
         first_name: fullName,
+        last_name: "",
         email: email,
         company: organization,
       },
-      metafields: [
-        {
-          namespace: "contact_form",
-          key: "budget",
-          value: budget,
-          value_type: "string",
-        },
-        {
-          namespace: "contact_form",
-          key: "timeline",
-          value: timeline,
-          value_type: "string",
-        },
-        {
-          namespace: "contact_form",
-          key: "project_description",
-          value: projectDescription,
-          value_type: "string",
-        },
-        {
-          namespace: "contact_form",
-          key: "newsletter_subscription",
-          value: newsletter,
-          value_type: "string",
-        },
-      ],
+      // metafields: [
+      //   {
+      //     namespace: "contact_form",
+      //     key: "budget",
+      //     value: budget,
+      //     value_type: "string",
+      //   },
+      //   {
+      //     namespace: "contact_form",
+      //     key: "timeline",
+      //     value: timeline,
+      //     value_type: "string",
+      //   },
+      //   {
+      //     namespace: "contact_form",
+      //     key: "project_description",
+      //     value: projectDescription,
+      //     value_type: "string",
+      //   },
+      //   {
+      //     namespace: "contact_form",
+      //     key: "newsletter_subscription",
+      //     value: newsletter,
+      //     value_type: "string",
+      //   },
+      // ],
     };
     // Define your Shopify API URL and access token
     const apiUrl =
-      "https://thisiscanda.myshopify.com/admin/api/2023-07/customers.json"; // Replace with your Shopify store URL
-    const accessToken = "fe68251fab787c99f3e14494d10c403c";
+      "https://candaserver.vercel.app/add-customer";
+    // const apiUrl =
+    //   "https://thisiscanda.myshopify.com/admin/api/2023-07/customers.json"; // Replace with your Shopify store URL
+    // const accessToken = "fe68251fab787c99f3e14494d10c403c";
 
     $.ajax({
       url: apiUrl,
       type: "POST",
       headers: {
         "Content-Type": "application/json",
-        "X-Shopify-Access-Token": accessToken,
+        // "X-Shopify-Access-Token": accessToken,
       },
       data: JSON.stringify(data),
       success: function () {

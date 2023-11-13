@@ -31,27 +31,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Send the subscription data to your server or perform the desired action
     // For example, you can use fetch to send a POST request to your server
-    fetch("/subscribe", {
+    const apiUrl =
+      "https://candaserver.vercel.app/add-customer";
+    fetch(apiUrl, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        fullName,
-        email,
+        customer: {
+          first_name: fullName,
+          last_name: "",
+          email,
+          accepts_marketing: true
+        }
       }),
     })
       .then((response) => response.json())
       .then((data) => {
         // Handle the response from your server here
-        if (data.success) {
-          alert("Subscription successful!");
-        } else {
-          alert("Subscription failed. Please try again.");
-        }
+        alert("Subscription successful!");
       })
       .catch((error) => {
         console.error("Error:", error);
+        alert("Subscription failed. Please try again.");
       });
   });
   document.addEventListener("DOMContentLoaded", function () {
